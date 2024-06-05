@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Folder Files</title>
+    <link href="https://js.wd-wd.top/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+    <h1>Folder Files</h1>
+    <ul>
+        <?php
+        $folder = "."; // 当前文件夹
+        $files = scandir($folder);
+        foreach($files as $file) {
+            if($file != "." && $file != "..") { // 排除当前目录和上级目录
+                echo "<li>$file</li>";
+            }
+        }
+        ?>
+    </ul>
+</body>
+</html>

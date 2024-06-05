@@ -1,0 +1,22 @@
+.title {
+  margin: 20px auto;
+  width: 330px;
+  font-size:24px;
+}
+.fix .form-horizontal{
+  border:1px dashed #ccc;
+  padding:10px 20px;
+}
+.box{
+  margin-bottom:20px;
+}
+.box .input-group>input {
+  background-color:#fff;
+}
+.red {
+  color:red;
+}
+.footer {
+  margin-bottom:7px;
+  color:#ccc;
+}

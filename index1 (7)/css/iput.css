@@ -1,0 +1,25 @@
+  $('#deviceFile').bind('input propertychange', function () {
+ 
+ 
+       let f = document.getElementById('deviceFile').files;
+       let [fileName, fileSize, fileType] = [f[0].name, f[0].size, f[0].type];
+                                      /*分别获取   文件名   文件大小   文件类型*/
+ 
+       $('.importBtn').hide();
+       $(this).parent('.importBtn').next().find('dt').text(f[0].name + '.' + f[0].type);
+       $(this).parent('.importBtn').next().find('dd').text('(' + getfilesize(f[0].size) + ')')
+       $(this).parent('.importBtn').next().show();
+   })
+ function getfilesize(size) {//把字节转换成正常文件大小
+            if (!size) return "";
+            var num = 1024.00; //byte
+            if (size < num)
+                return size + "B";
+            if (size < Math.pow(num, 2))
+                return (size / num).toFixed(2) + "KB"; //kb
+            if (size < Math.pow(num, 3))
+                return (size / Math.pow(num, 2)).toFixed(2) + "MB"; //M
+            if (size < Math.pow(num, 4))
+                return (size / Math.pow(num, 3)).toFixed(2) + "G"; //G
+            return (size / Math.pow(num, 4)).toFixed(2) + "T"; //T
+        }
