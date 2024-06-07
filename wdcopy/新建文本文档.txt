@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>服务器地址列表</title>
+	<link rel="shortcut icon" href="https://wendycode.net/static/img/logo/favicon.ico" rel="shortcut icon" type="image/x-icon">
+ 
+		<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://hub.wendycode.net/wdcopy/copy/copy1.css"/>
+		<link rel="stylesheet" href="https://hub.wendycode.net/wdcopy/copy/copy2.css"/>
+		<script src="https://hub.wendycode.net/wdcopy/copy/copy1.js"></script>
+</head>
+
+
+<script type="text/javascript" src="https://tool.oschina.net/js/jquery/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="https://tool.oschina.net/uploads/jquery/pagination/jquery-tablePagination.js"></script>
+<script type="text/javascript" src="https://hub.wendycode.net/wdcopy/copy/text1.js"></script>
+<body>
+<div class="content">
+<div style="text-align: center;">
+<p>
+<table id="menuTable">
+    <thead>
+      <tr>
+        <td><h1>服务器地址列表</h1></td>
+      </tr>
+    </thead>
+<table id="menuTable">
+    <thead>
+      <tr>
+        <td><h3>省</h3></td><td><h3>市</h3></td><td><h3>服务器地址</h3><td><h3>&nbsp;&nbsp;&nbsp;用&nbsp;&nbsp;户&nbsp;&nbsp;名&nbsp;&nbsp;&nbsp</h3></td><td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密&nbsp;&nbsp;码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></td><td><h3>备&nbsp;&nbsp;注</h3></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="display: table-row; ">
+        <td>直辖市</td><td>北京市</td><td><pre>beijing.wendy-ip.com</pre><td><pre>wdvpn</pre></td><td><pre>wd123</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>直辖市</td><td>上海市</td><td><pre>shanghai.wendy-ip.com</pre><td><pre>wdvpn</pre></td><td><pre>wd123</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>直辖市</td><td>天津市</td><td><pre>tianjin.wendy-ip.com</pre><td><pre>wdvpn</pre></td><td><pre>wd123</pre></td><td>/</td>
+      </tr style="display: table-row; ">
+      <tr style="display: table-row; ">
+        <td>直辖市</td><td>重庆市</td><td><pre>chongqing.wendy-ip.com</pre><td><pre>wdvpn</pre></td><td><pre>wd123</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>广东省</td><td>广州市</td><td><pre>guangzhou.wendy-ip.com</pre><td><pre>wdvpn</pre></td><td><pre>wd123</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>xxx</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>xxx</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>xxx</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>xxx</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>xxx</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>xxx</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>xxx</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>xxx</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>xxx</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>xxx</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>xxx</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>xxx</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>xxx</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>xxx</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>xxx</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>xxx</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>xxx</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>南昌市</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+      <tr style="display: table-row; ">
+        <td>xxx</td><td>xxx</td><td><pre>xxxx</pre><td><pre>xxxx</pre></td><td><pre>xxxx</pre></td><td>/</td>
+      </tr>
+</pre></div>
+</body>
+    </tbody>
+</table>
+</p>
+</div>
+</html>
