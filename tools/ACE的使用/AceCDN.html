@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ACE.js的使用</title>
+    <style>
+        #editorACE1, #editorACE2 {
+            margin: 0 auto;
+            width: 65vw;
+            height: 75vh;
+        }
+    </style>
+</head>
+
+<body>
+<!----------------------------------
+CDN的方式引入开始
+------------------------------------>
+<pre id="editorACE1"></pre>
+<!--引入ACE.js-->
+<script src="https://cdn.bootcdn.net/ajax/libs/ace/1.11.1/ace.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/ace/1.11.1/ext-language_tools.js"></script>
+<!--ACE.js的代码一定要放到vue后边，否则不生效-->
+<script>
+    function initEditor() {
+        let editorACE = ace.edit("editorACE1");
+        editorACE.setOptions({
+            enableBasicAutocompletion: true,//代码补全
+            enableSnippets: true,//代码模版
+            enableLiveAutocompletion: true,// 实时补全
+        });
+        editorACE.setTheme("ace/theme/twilight");// 设置主题
+        editorACE.session.setMode("ace/mode/java");
+        editorACE.resize();
+        document.getElementById("editorACE1").style.fontSize = "20px";
+        let md = "public class Solution {\n" +
+                "    public Solution() {\n" +
+                "    }\n" +
+                "    public static void main(String[] var0) {\n" +
+                "        System.out.println(\"Hello\");\n" +
+                "    }\n" +
+                "}";
+        // 设置编辑框代码: editorACE1.setValue();
+      editorACE.setValue(md);
+        // 获取编辑框代码: editorACE1.getValue();
+    }
+
+    initEditor();
+</script>
+<!----------------------------------
+CDN的方式引入结束
+------------------------------------>
+
+
+<!----------------------------------
+静态资源的方式引入开始
+------------------------------------>
+<pre id="editorACE2"></pre>
+<script src="src/ace.js"></script>
+<!--导入主题样式-->
+<script src="src/theme-github.js"></script>
+<!--导入输入模式：默认文本编辑器，这里以java为例-->
+<script src="src/mode-java.js"></script>
+<script>
+    function initEditor(){
+        let editorACE2 = ace.edit("editorACE2");
+        editorACE2.setOptions({
+            enableBasicAutocompletion: true,//代码补全
+            enableSnippets: true,// 代码模板
+            enableLiveAutocompletion: true,// 实时补全
+        });
+        editorACE2.setTheme("ace/theme/github");// 设置主题样式
+        editorACE2.session.setMode("ace/mode/java");// 设置输入模式
+        editorACE2.resize();// 更改编辑器大小
+        editorACE2.session.setTabSize(4);// 设置 Tab 大小
+        document.getElementById("editorACE2").style.fontSize = "20px";// 设置字体大小
+        editorACE2.session.setUseWrapMode(true);// 设置自动换行
+        editorACE2.setHighlightActiveLine(true);// 设置行高亮显示
+        editorACE2.setShowPrintMargin(false);// 设置边距可见性
+        // editorACE2.setReadOnly(true);// 设置只读，不能更改
+        let md = "public class Solution {\n" +
+            "    public Solution() {\n" +
+            "    }\n" +
+            "    public static void main(String[] var0) {\n" +
+            "        System.out.println(\"Hello\");\n" +
+            "    }\n" +
+            "}";
+        // 设置编辑框代码: editorACE2.setValue();
+        editorACE2.setValue(md);
+        // 获取编辑框代码: editorACE2.getValue();
+    }
+
+    initEditor();
+</script>
+<!----------------------------------
+静态资源的方式引入结束
+------------------------------------>
+</body>
+
+</html>
