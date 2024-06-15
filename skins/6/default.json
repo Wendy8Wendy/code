@@ -1,0 +1,1411 @@
+{
+    'Quick Set': 0,
+    WebFig: 0,
+    Terminal: 0,
+    Manual: 0,
+    CAPsMAN: 0,
+    Bridge: 0,
+    Switch: 0,
+    Mesh: 0,
+    IP: {
+        ARP: 0,
+        Accounting: 0,
+        Addresses: 0,
+        Cloud: {
+            name: '宽带IP（公网IP）',
+            Cloud: {
+                '&': {
+                    apply: { name: '确认' }
+                },
+                'DDNS Enabled': 0,
+                'Public Address': { name: '宽带公网IP' },
+                'DDNS Update Interval': 0,
+                'Update Time': 0,
+                'DNS Name': 0,
+                'Use Local Address': 0,
+                'Force Update': 0
+            }
+        },
+        'DHCP Client': {
+            'DHCP Client': {
+                '&': {
+                    set: { name: '确定' },
+                    remove: 0,
+                    title: '做最稳定的软改路由器-By Wendy',
+                    cancel: { name: '取消/返回' },
+                    apply: { name: '应用' }
+                },
+                DHCP: {
+                    Interface: { ro: true, name: '接口' },
+                    'Use Peer DNS': 0,
+                    'Use Peer NTP': 0,
+                    'Add Default Route': 0
+                },
+                Advanced: { 'DHCP Options': 0, 'Default Route Distance': 0, Script: 0 },
+                Status: {
+                    'IP Address': { name: '上级分配IP地址' },
+                    Gateway: { name: '上级网关' },
+                    'DHCP Server': 0,
+                    'Expires After': 0,
+                    'Primary DNS': 0,
+                    'Secondary DNS': 0,
+                    'Primary NTP': 0,
+                    'Secondary NTP': 0,
+                    'CAPS Managers': 0
+                },
+                Enabled: { name: '是否启用' },
+                Release: { name: '释放上级网关' },
+                name: 'DHCP客户端',
+                undefined: 0,
+                Renew: { name: '更新上级网关' }
+            },
+            'DHCP Client Options': 0,
+            name: '上级网关信息'
+        },
+        'DHCP Relay': 0,
+        'DHCP Server': {
+            name: '连接设备管理',
+            DHCP: 0,
+            'DHCP Config': 0,
+            'DHCP Setup': 0,
+            Networks: 0,
+            Leases: {
+                '&': {
+                    set: { name: '确定' },
+                    remove: { name: '删除' },
+                    cancel: { name: '取消' },
+                    apply: { name: '应用' }
+                },
+                Address: { name: 'IP 地址' },
+                'MAC Address': { name: '设备MAC 地址' },
+                'Use Src. MAC Address': 0,
+                'Client ID': { name: '设备ID' },
+                Server: 0,
+                'Lease Time': 0,
+                'Block Access': 0,
+                'Allow Dual Stack Queue': 0,
+                'Always Broadcast': 0,
+                'DHCP Options': 0,
+                'DHCP Option Set': 0,
+                'Rate Limit': 0,
+                'Insert Queue Before': 0,
+                'Address List': 0,
+                'Active Address': { name: '活跃IP地址' },
+                'Active MAC Address': { name: '活跃 MAC 地址' },
+                'Active Client ID': { name: '活跃设备 ID' },
+                'Active Host Name': { name: '活跃设备名称' },
+                'Active Server': 0,
+                'Expires After': 0,
+                'Last Seen': 0,
+                'Agent Circuit Id': 0,
+                'Agent Remote Id': 0,
+                Enabled: { name: '是否启用' },
+                Comment: { name: '备注' },
+                'Check Status': 0,
+                name: '连接设备',
+                'Make Static': { name: '设置为静态' },
+                General: {
+                    Address: { name: 'IP地址' },
+                    'MAC Address': { name: 'MAC 地址' },
+                    'Client ID': { name: '设备 ID' },
+                    Server: 0,
+                    'Lease Time': 0,
+                    'Block Access': 0,
+                    'Allow Dual Stack Queue': 0,
+                    'Always Broadcast': 0,
+                    'DHCP Options': 0,
+                    'DHCP Option Set': 0,
+                    'Rate Limit': 0,
+                    'Insert Queue Before': 0,
+                    'Address List': { name: 'VPN列表' },
+                    'Use Src. MAC Address': 0
+                },
+                Active: {
+                    'Active Address': { name: '活跃IP地址' },
+                    'Active MAC Address': { name: '活跃 MAC 地址' },
+                    'Active Client ID': { name: '活跃设备 ID' },
+                    'Active Host Name': { name: '设备名称' },
+                    'Active Server': 0,
+                    'Expires After': 0,
+                    'Last Seen': 0,
+                    'Agent Circuit Id': 0,
+                    'Agent Remote Id': 0
+                },
+                undefined: { name: '备注' }
+            },
+            Options: 0,
+            'Option Sets': 0,
+            'Vendor Classes': 0,
+            Alerts: 0
+        },
+        DNS: {
+            Settings: {
+                '&': {
+                    apply: { name: '确定' },
+                    title: '做最稳定的软改路由器-By Wendy'
+                },
+                Servers: { name: 'DNS地址', note: '这里默认主223.5.5.5 备8.8.8.8，如果不是请修改回223.5.5.5 8.8.8.8' },
+                'Dynamic Servers': 0,
+                'Allow Remote Requests': 0,
+                'Max UDP Packet Size': 0,
+                'Query Server Timeout': 0,
+                'Query Total Timeout': 0,
+                'Max. Concurrent Queries': 0,
+                'Max. Concurrent TCP Sessions': 0,
+                'Cache Size': 0,
+                'Cache Max TTL': 0,
+                'Cache Used': 0,
+                'Use DoH Server': 0,
+                'Verify DoH Certificate': 0
+            },
+            Static: 0,
+            Cache: 0,
+            name: 'DNS设置'
+        },
+        Firewall: 0,
+        Hotspot: 0,
+        IPsec: 0,
+        'Kid Control': 0,
+        Neighbors: 0,
+        Packing: 0,
+        Pool: 0,
+        Routes: 0,
+        SMB: 0,
+        SNMP: 0,
+        Services: 0,
+        Settings: 0,
+        Socks: 0,
+        TFTP: 0,
+        'Traffic Flow': 0,
+        UPnP: 0,
+        'Web Proxy': 0,
+        name: '连接设备管理'
+    },
+    MPLS: 0,
+    Routing: 0,
+    Queues: 0,
+    Files: 0,
+    RADIUS: 0,
+    Tools: {
+        'BTest Server': 0,
+        'Bandwidth Test': 0,
+        Email: 0,
+        'Flood Ping': 0,
+        Graphing: 0,
+        'IP Scan': 0,
+        'MAC Server': 0,
+        Netwatch: 0,
+        'Packet Sniffer': 0,
+        'Ping Speed': 0,
+        Profile: 0,
+        RoMON: 0,
+        SMS: 0,
+        Telnet: 0,
+        Torch: 0,
+        Traceroute: 0,
+        'Traffic Generator': 0,
+        'Traffic Monitor': 0,
+        Ping: {
+            Ping: {
+                '&': {
+                    start: { name: '开始' },
+                    stop: { name: '停止' },
+                    cancel: { name: '关闭并返回' },
+                    title: '做最稳定的软改路由器-By Wendy'
+                },
+                General: {
+                    'ARP Ping': 0,
+                    'Packet Count': 0,
+                    Timeout: 0,
+                    tab: 0,
+                    'Ping To': { name: '输入连接的目的IP', note: '目标地址（请属于目标IP地址，不是网址，也可输入114.114.114.114或223.5.5.5）' },
+                    Interface: 0
+                },
+                Advanced: {
+                    'Src. Address': 0,
+                    'Packet Size': 0,
+                    TTL: 0,
+                    DSCP: 0,
+                    'Routing Table': 0,
+                    'Dont Fragment': 0
+                }
+            },
+            name: '网络延迟检测Ping'
+        },
+        name: '网络延迟测试',
+        WoL: 0
+    },
+    MetaROUTER: 0,
+    Partition: 0,
+    'Make Supout.rif': 0,
+    WinBox: 0,
+    License: 0,
+    Wireless: {
+        'W60G Station': 0,
+        'Nstreme Dual': 0,
+        CAP: 0,
+        'WPS Client': 0,
+        'Setup Repeater': 0,
+        Scanner: 0,
+        'Freq. Usage': {
+            name: '频率强度检测',
+            '&': {
+                start: { name: '开始' },
+                stop: { name: '停止' },
+                cancel: { name: '返回/关闭' },
+                title: '做最稳定的软改路由器-By Wendy'
+            },
+            Interface: { name: '测试接口（wlan1位2.4G，wlan2为5G）' }
+        },
+        Alignment: 0,
+        'Wireless Sniffer': 0,
+        'Access List': 0,
+        'Connect List': 0,
+        Channels: 0,
+        Virtual: {
+            '&': {
+                remove: 0,
+                set: { name: '确定' },
+                cancel: { name: '返回/取消' },
+                apply: { name: '应用' }
+            },
+            'Simple Mode': 0,
+            Torch: 0,
+            General: {
+                MTU: 0,
+                'Actual MTU': 0,
+                'L2 MTU': 0,
+                ARP: 0,
+                'ARP Timeout': 0,
+                Name: { name: '无线线路配置名称', ro: true },
+                Type: 0,
+                'MAC Address': { name: 'MAC 地址', separator: 0 },
+                tab: 0
+            },
+            slave: 0,
+            Wireless: {
+                Mode: 0,
+                'Secondary Channel': 0,
+                'Master Interface': { name: '挂靠主WIFI选择' },
+                'Security Profile': 0,
+                'WPS Mode': 0,
+                'VLAN Mode': 0,
+                'VLAN ID': 0,
+                'Default Authenticate': 0,
+                'Default Forward': 0,
+                'Hide SSID': { name: '隐藏wifi名字' },
+                'Default AP Tx Rate': 0,
+                'Default Client Tx Rate': 0,
+                tab: 0,
+                SSID: { name: 'SSID/无线名称' },
+                'Interworking Profile': 0
+            },
+            WDS: { 'WDS Mode': 0, 'WDS Default Bridge': 0, 'WDS Ignore SSID': 0 },
+            Traffic: {
+                tab: '数据流量',
+                'Tx/Rx Rate': 0,
+                'Tx/Rx Packet Rate': 0,
+                'FP Tx/Rx Rate': 0,
+                'FP Tx/Rx Packet Rate': 0,
+                'Tx/Rx Bytes': 0,
+                'Tx/Rx Packets': 0,
+                'Tx/Rx Drops': 0,
+                'Tx/Rx Errors': 0,
+                'Byte Graph': 0,
+                'Packet Graph': 0
+            },
+            Enabled: { name: '是否启用此WIFI线路' },
+            Comment: 0,
+            Status: {
+                'Last Link Down Time': 0,
+                'Last Link Up Time': 0,
+                'Link Downs': 0,
+                tab: 0
+            },
+            'Registered Clients': 0,
+            'Authenticated Clients': 0,
+            Dynamic: 0,
+            running: 0,
+            'Last IP': { separator: 0 }
+        },
+        WDS: {
+            '&': { remove: 0 }
+        },
+        'Wireless Snooper': {
+            name: '无线侦探',
+            '&': {
+                start: { name: '开始' },
+                stop: { name: '停止' },
+                cancel: { name: '关闭' },
+                title: '做最稳定的软改路由器-By Wendy'
+            },
+            Interface: { name: '接口' },
+            Settings: { name: '配置' }
+        },
+        'Security Profiles': {
+            name: 'WiFi密码修改',
+            '&': {
+                title: '做最稳定的软改路由器-By Wendy',
+                add: { name: 'Add New' },
+                set: { name: '确定' },
+                remove: 0,
+                cancel: { name: '取消/返回' },
+                apply: { name: '应用' },
+                name: '做最稳定的软改路由器-By Wendy'
+            },
+            General: {
+                Name: 0,
+                Mode: 0,
+                'Authentication Types': 0,
+                'Unicast Ciphers': 0,
+                'Group Ciphers': 0,
+                'WPA Pre-Shared Key': { name: '输入密码', tab: '此密码为路由器自带的WiFi密码，非APWiFi密码' },
+                'WPA2 Pre-Shared Key': { name: '密码确认', note: '此密码为路由器自带的WiFi密码，非APWiFi密码（默认为wdwdwdwd）' },
+                'Supplicant Identity': 0,
+                'Group Key Update': 0,
+                'Management Protection': 0,
+                'Management Protection Key': 0,
+                'Disable PMKID': 0,
+                tab: 0
+            },
+            RADIUS: {
+                'MAC Authentication': 0,
+                'MAC Accounting': 0,
+                'EAP Accounting': 0,
+                'Interim Update': 0,
+                'MAC Format': 0,
+                'MAC Mode': 0,
+                'Called ID Format': 0,
+                'MAC Caching Time': 0
+            },
+            EAP: {
+                'EAP Methods': 0,
+                'TLS Mode': 0,
+                'TLS Certificate': 0,
+                'MSCHAPv2 Username': 0,
+                'MSCHAPv2 Password': 0
+            },
+            undefined: 0,
+            'Static Keys': {
+                'Transmit Key': 0,
+                'Key 0': 0,
+                'Key 1': 0,
+                'Key 2': 0,
+                'Key 3': 0,
+                'St. Private Key': 0
+            },
+            Default: 0
+        },
+        'WiFi Interfaces': {
+            '&': { title: '点击D为关闭WiFi信号，点击E为打开WiFi信号，wlan1/wlan2一般情况下请不要关闭 做最稳定的软改路由器-By Wendy' },
+            name: '无线配置'
+        },
+        name: '无线配置',
+        'Wireless (Atheros AR9888)': {
+            '&': {
+                set: { name: '确定' },
+                cancel: { name: '返回/取消' },
+                apply: { name: '应用' }
+            },
+            General: {
+                tab: 0,
+                Name: { name: '配置名称', ro: true },
+                Type: 0,
+                MTU: 0,
+                'Actual MTU': 0,
+                'L2 MTU': 0,
+                'MAC Address': { name: 'MAC地址' },
+                ARP: 0,
+                'ARP Timeout': 0
+            },
+            'Simple Mode': 0,
+            Wireless: {
+                tab: 0,
+                Mode: 0,
+                Band: { name: '频段' },
+                'Channel Width': { name: '频段' },
+                Frequency: { name: '频率' },
+                'Secondary Channel': 0,
+                'Security Profile': 0,
+                'WPS Mode': 0,
+                'Frequency Mode': 0,
+                Country: 0,
+                Installation: 0,
+                'Antenna Gain': 0,
+                'Default AP Tx Limit': 0,
+                'Default Client Tx Limit': 0,
+                'Default Authenticate': 0,
+                'Default Forward': 0,
+                'Hide SSID': { name: '是否隐藏此WIFI' },
+                SSID: { name: 'SSID/无线名称' }
+            },
+            Distance: 0,
+            HT: {
+                'Tx Chains': 0,
+                'Rx Chains': 0,
+                'AMSDU Limit': 0,
+                'AMSDU Threshold': 0,
+                'Guard Interval': 0,
+                'AMPDU Priorities': 0
+            },
+            'HT Supported MCS': 0,
+            'HT Basic MCS': 0,
+            WDS: { 'WDS Mode': 0, 'WDS Default Bridge': 0, 'WDS Ignore SSID': 0 },
+            Nstreme: {
+                'Enable Nstreme': 0,
+                'Enable Polling': 0,
+                'Disable CSMA': 0,
+                'Framer Policy': 0,
+                'Framer Limit': 0
+            },
+            'WPS Accept': 0,
+            'WPS Client': 0,
+            'Setup Repeater': 0,
+            'Scan...': 0,
+            'Freq. Usage...': 0,
+            'Align...': 0,
+            'Sniff...': 0,
+            'Snooper...': 0,
+            'Reset Configuration': 0,
+            Status: { 'Last Link Down Time': 0, 'Last Link Up Time': 0, 'Link Downs': 0 },
+            Channel: { name: '当前频率' },
+            'Noise Floor': { name: '信号强度' },
+            'Overall Tx CCQ': 0,
+            'Registered Clients': 0,
+            'Authenticated Clients': 0,
+            Torch: 0,
+            Enabled: { name: '是否启用此主WIFI' },
+            Comment: 0,
+            Dynamic: 0,
+            running: 0,
+            slave: 0,
+            'NV2': {
+                'TDMA Period Size': 0,
+                'Cell Radius': 0,
+                Security: 0,
+                'Preshared Key': 0,
+                Mode: 0,
+                'Downlink Ratio': 0,
+                'Sync Secret': 0,
+                'Queue Count': 0,
+                QoS: 0
+            },
+            Traffic: {
+                'Tx/Rx Rate': 0,
+                'Tx/Rx Packet Rate': 0,
+                'FP Tx/Rx Rate': 0,
+                'FP Tx/Rx Packet Rate': 0,
+                'Tx/Rx Bytes': 0,
+                'Tx/Rx Packets': 0,
+                'Tx/Rx Drops': 0,
+                'Tx/Rx Errors': 0,
+                'Byte Graph': 0,
+                'Packet Graph': 0
+            },
+            undefined: 0
+        },
+        'Wireless (Atheros AR9300)': {
+            '&': {
+                set: { name: '确定' },
+                cancel: { name: '返回/取消' },
+                apply: { name: '应用' }
+            },
+            General: {
+                Name: { name: '主WIFI配置名称', ro: true },
+                Type: 0,
+                MTU: 0,
+                'Actual MTU': 0,
+                'L2 MTU': 0,
+                'MAC Address': { name: 'MAC地址', separator: 0 },
+                ARP: 0,
+                'ARP Timeout': 0,
+                tab: 0
+            },
+            'Simple Mode': 0,
+            Wireless: {
+                Mode: 0,
+                Band: { name: '主频等级', ro: 0 },
+                'Channel Width': { name: '频段' },
+                Frequency: { name: '频率' },
+                'Security Profile': 0,
+                'WPS Mode': 0,
+                'Frequency Mode': 0,
+                Country: 0,
+                Installation: 0,
+                'Antenna Gain': 0,
+                'Default AP Tx Limit': 0,
+                'Default Client Tx Limit': 0,
+                'Default Authenticate': 0,
+                'Default Forward': 0,
+                'Hide SSID': { name: '是否隐藏此WIFI' },
+                tab: 0,
+                SSID: { name: 'SSID/无线名称' }
+            },
+            Distance: 0,
+            HT: {
+                'Tx Chains': 0,
+                'Rx Chains': 0,
+                'AMSDU Limit': 0,
+                'AMSDU Threshold': 0,
+                'Guard Interval': 0,
+                'AMPDU Priorities': 0,
+                tab: 0,
+                'HT MCS': { tab: 0 }
+            },
+            'HT Supported MCS': 0,
+            'HT Basic MCS': 0,
+            WDS: {
+                'WDS Mode': 0,
+                'WDS Default Bridge': 0,
+                'WDS Ignore SSID': 0,
+                tab: 0,
+                'WDS Default Cost': { separator: 0 }
+            },
+            Nstreme: 0,
+            'WPS Accept': 0,
+            'WPS Client': 0,
+            'Setup Repeater': 0,
+            'Scan...': 0,
+            'Freq. Usage...': 0,
+            'Align...': 0,
+            'Sniff...': 0,
+            'Snooper...': 0,
+            'Reset Configuration': 0,
+            Status: {
+                'Last Link Down Time': 0,
+                'Last Link Up Time': 0,
+                'Link Downs': 0,
+                tab: 0,
+                'Advanced Status': { tab: 0 }
+            },
+            Channel: 0,
+            'Noise Floor': 0,
+            'Overall Tx CCQ': 0,
+            'Registered Clients': 0,
+            'Authenticated Clients': 0,
+            Torch: 0,
+            Enabled: { name: '是否启用主WIFI' },
+            Comment: 0,
+            Dynamic: 0,
+            running: 0,
+            slave: 0,
+            'NV2': {
+                'TDMA Period Size': 0,
+                'Cell Radius': 0,
+                Security: 0,
+                'Preshared Key': 0,
+                Mode: 0,
+                'Downlink Ratio': 0,
+                'Sync Secret': 0,
+                'Queue Count': 0,
+                QoS: 0,
+                tab: 0
+            },
+            Traffic: {
+                'Tx/Rx Rate': 0,
+                'Tx/Rx Packet Rate': 0,
+                'FP Tx/Rx Rate': 0,
+                'FP Tx/Rx Packet Rate': 0,
+                'Tx/Rx Bytes': 0,
+                'Tx/Rx Packets': 0,
+                'Tx/Rx Drops': 0,
+                'Tx/Rx Errors': 0,
+                'Byte Graph': 0,
+                'Packet Graph': 0,
+                tab: 0
+            },
+            undefined: 0,
+            'Wireless Protocol': 0,
+            'Tx Rate': 0,
+            'Rx Rate': 0,
+            SSID: 0,
+            BSSID: 0,
+            'Tx/Rx Signal Strength': 0,
+            'Tx/Rx Signal Strength Ch0': 0,
+            'Tx/Rx Signal Strength Ch1': 0,
+            'Tx/Rx Signal Strength Ch2': 0,
+            'Tx/Rx Signal Strength Ch3': 0,
+            'Signal To Noise': 0,
+            'Tx/Rx CCQ': 0,
+            'RouterOS Version': 0,
+            'Last IP': 0,
+            'WDS Link': 0,
+            Compression: 0,
+            'WMM Enabled': 0,
+            'Framing Mode': 0,
+            'Framing Limit': 0,
+            'Framing Current Size': 0,
+            Polling: 0,
+            'CSMA Disabled': 0
+        },
+        'Wireless (IPQ4019)': {
+            '&': {
+                set: { name: '保存并返回' },
+                cancel: { name: '返回上级' },
+                apply: { name: '保存修改' }
+            },
+            General: {
+                Name: { name: '主无线', ro: true },
+                Type: 0,
+                MTU: 0,
+                'Actual MTU': 0,
+                'L2 MTU': 0,
+                'MAC Address': { name: '无线MAC地址' },
+                ARP: 0,
+                'ARP Timeout': 0,
+                tab: 0
+            },
+            'Simple Mode': 0,
+            Wireless: {
+                Mode: 0,
+                'Channel Width': { name: '频宽' },
+                Frequency: { name: '频率', note: '这里可以修改WiFi的频率（信道），一般不要修改' },
+                'Security Profile': 0,
+                'WPS Mode': 0,
+                'Frequency Mode': 0,
+                Country: 0,
+                Installation: 0,
+                'Antenna Gain': 0,
+                'Default AP Tx Limit': 0,
+                'Default Client Tx Limit': 0,
+                'Default Authenticate': 0,
+                'Default Forward': 0,
+                'Hide SSID': { name: '隐藏wifi名字' },
+                tab: 0,
+                'Secondary Channel': 0,
+                SSID: { name: '无线名称' },
+                Band: { name: '频段' }
+            },
+            Distance: 0,
+            HT: {
+                'Tx Chains': 0,
+                'Rx Chains': 0,
+                'AMSDU Limit': 0,
+                'AMSDU Threshold': 0,
+                'Guard Interval': 0,
+                'AMPDU Priorities': 0
+            },
+            'HT Supported MCS': 0,
+            'HT Basic MCS': 0,
+            WDS: { 'WDS Mode': 0, 'WDS Default Bridge': 0, 'WDS Ignore SSID': 0 },
+            Nstreme: 0,
+            'WPS Accept': 0,
+            'WPS Client': 0,
+            'Setup Repeater': 0,
+            'Scan...': 0,
+            'Freq. Usage...': 0,
+            'Align...': 0,
+            'Sniff...': 0,
+            'Snooper...': 0,
+            'Reset Configuration': 0,
+            Status: { 'Last Link Down Time': 0, 'Last Link Up Time': 0, 'Link Downs': 0 },
+            Channel: 0,
+            'Noise Floor': 0,
+            'Overall Tx CCQ': 0,
+            'Registered Clients': 0,
+            'Authenticated Clients': 0,
+            Traffic: {
+                'Tx/Rx Rate': 0,
+                'Tx/Rx Packet Rate': 0,
+                'FP Tx/Rx Rate': 0,
+                'FP Tx/Rx Packet Rate': 0,
+                'Tx/Rx Bytes': 0,
+                'Tx/Rx Packets': 0,
+                'Tx/Rx Drops': 0,
+                'Tx/Rx Errors': 0,
+                'Byte Graph': 0,
+                'Packet Graph': 0
+            },
+            Torch: 0,
+            Enabled: { name: '启用' },
+            Comment: 0,
+            Dynamic: 0,
+            running: 0,
+            slave: 0,
+            undefined: 0,
+            'NV2': { Security: 0, 'Preshared Key': 0 },
+            'Wireless Protocol': 0,
+            'Tx Rate': 0,
+            'Rx Rate': 0,
+            SSID: 0,
+            BSSID: 0,
+            'Tx/Rx Signal Strength': 0,
+            'Tx/Rx Signal Strength Ch0': 0,
+            'Tx/Rx Signal Strength Ch1': 0,
+            'Tx/Rx Signal Strength Ch2': 0,
+            'Tx/Rx Signal Strength Ch3': 0,
+            'Signal To Noise': 0,
+            'Tx/Rx CCQ': 0,
+            'RouterOS Version': 0,
+            'Last IP': 0,
+            'WDS Link': 0,
+            Compression: 0,
+            'WMM Enabled': 0,
+            'Framing Mode': 0,
+            'Framing Limit': 0,
+            'Framing Current Size': 0,
+            Polling: 0,
+            'CSMA Disabled': 0
+        },
+        Registration: {
+            name: '连接设备数量',
+            '&': {
+                remove: 0,
+                cancel: { name: '关闭' }
+            },
+            General: {
+                'Radio Name': 0,
+                'MAC Address': { name: '手机MAC地址' },
+                Interface: { name: '连接wifi接口' },
+                Uptime: { name: '设备在线时间' },
+                Distance: 0,
+                'RouterOS Version': 0,
+                'AP Tx Limit': 0,
+                'Client Tx Limit': 0,
+                'Last IP': { name: '设备获取内网IP' },
+                AP: 0,
+                WDS: 0,
+                Compression: 0,
+                'WMM Enabled': 0
+            },
+            '802.1x': {
+                '802.1x Port Enabled': 0,
+                'Authentication Type': 0,
+                Encryption: 0,
+                'Group Encryption': 0
+            },
+            Signal: {
+                'Last Activity': 0,
+                'Tx/Rx Signal Strength': 0,
+                'Tx/Rx Signal Strength Ch0': 0,
+                'Tx/Rx Signal Strength Ch1': 0,
+                'Tx/Rx Signal Strength Ch2': 0,
+                'Signal To Noise': 0,
+                'Tx/Rx CCQ': 0,
+                'P Throughput': 0,
+                'Signal Strengths': 0,
+                'Tx/Rx Signal Strength Ch3': 0
+            },
+            Nstreme: {
+                Nstreme: 0,
+                'Framing Mode': 0,
+                'Framing Limit': 0,
+                'Framing Current Size': 0
+            },
+            'NV2': { 'TDMA Timing Offset': 0, 'TDMA Tx Size': 0, 'TDMA Rx Size': 0 },
+            Statistics: {
+                'Tx Rate': 0,
+                'Rx Rate': 0,
+                'Tx/Rx Packets': 0,
+                'Tx/Rx Bytes': 0,
+                'Tx/Rx Frames': 0,
+                'Tx/Rx Frame Bytes': 0,
+                'Tx/Rx Hw. Frames': 0,
+                'Tx/Rx Hw. Frame Bytes': 0
+            },
+            Comment: 0,
+            Reset: 0,
+            'Copy to Access List': 0,
+            'Copy to Connect List': 0,
+            Ping: 0,
+            'MAC Ping': 0,
+            Telnet: 0,
+            'MAC Telnet': 0,
+            Torch: 0
+        },
+        'Wireless Snooper Settings': {
+            '&': {
+                set: { name: '确定' },
+                cancel: { name: '取消/返回' },
+                apply: { name: '应用' },
+                title: '做最稳定的软改路由器-By Wendy'
+            },
+            'Multiple Channels': { name: '多通道' },
+            'Channel Time': { name: '信道时间' },
+            'Receive Errors': { name: '接受错误' }
+        },
+        'Interworking Profiles': 0,
+        'Wireless (QCA9984)': {
+            '&': {
+                set: { name: '确定' },
+                cancel: { name: '取消' },
+                apply: { name: '应用' }
+            },
+            General: {
+                tab: 0,
+                Name: { name: '无线线路配置名称' },
+                Type: 0,
+                MTU: 0,
+                'Actual MTU': 0,
+                'L2 MTU': 0,
+                'MAC Address': { name: 'MAC 地址' },
+                ARP: 0,
+                'ARP Timeout': 0
+            },
+            'Simple Mode': 0,
+            Wireless: {
+                tab: 0,
+                Mode: 0,
+                Band: 0,
+                'Channel Width': 0,
+                Frequency: 0,
+                'Secondary Channel': 0,
+                SSID: { name: 'SSID/无线名称' },
+                'Security Profile': 0,
+                'WPS Mode': 0,
+                'Frequency Mode': 0,
+                Country: 0,
+                Installation: 0,
+                'Default AP Tx Limit': 0,
+                'Default Client Tx Limit': 0,
+                'Default Authenticate': 0,
+                'Default Forward': 0,
+                'Hide SSID': { name: '隐藏wifi名字' }
+            },
+            Distance: 0,
+            HT: {
+                'Tx Chains': 0,
+                'Rx Chains': 0,
+                'AMSDU Limit': 0,
+                'AMSDU Threshold': 0,
+                'Guard Interval': 0,
+                'AMPDU Priorities': 0
+            },
+            'HT Supported MCS': 0,
+            'HT Basic MCS': 0,
+            WDS: { 'WDS Mode': 0, 'WDS Default Bridge': 0, 'WDS Ignore SSID': 0 },
+            Nstreme: {
+                'Enable Nstreme': 0,
+                'Enable Polling': 0,
+                'Disable CSMA': 0,
+                'Framer Policy': 0,
+                'Framer Limit': 0
+            },
+            'WPS Accept': 0,
+            'WPS Client': 0,
+            'Setup Repeater': 0,
+            'Scan...': 0,
+            'Freq. Usage...': 0,
+            'Align...': 0,
+            'Sniff...': 0,
+            'Snooper...': 0,
+            'Reset Configuration': 0,
+            Status: { 'Last Link Down Time': 0, 'Last Link Up Time': 0, 'Link Downs': 0 },
+            Channel: 0,
+            'Noise Floor': 0,
+            'Overall Tx CCQ': 0,
+            'Registered Clients': 0,
+            'Authenticated Clients': 0,
+            Traffic: {
+                'Tx/Rx Rate': 0,
+                'Tx/Rx Packet Rate': 0,
+                'FP Tx/Rx Rate': 0,
+                'FP Tx/Rx Packet Rate': 0,
+                'Tx/Rx Bytes': 0,
+                'Tx/Rx Packets': 0,
+                'Tx/Rx Drops': 0,
+                'Tx/Rx Errors': 0,
+                'Byte Graph': 0,
+                'Packet Graph': 0
+            },
+            Torch: 0,
+            Enabled: { name: '是否启用此WIFI线路' },
+            Comment: 0
+        }
+    },
+    PPP: {
+        Interface: {
+            '&': { title: '点击D为断开VPN连接，点击E为打开VPN连接，R表示vpn连接成功，RX表示下行速度，TX表示上行速度 做最稳定的软改路由器-By Wendy' },
+            name: 'VPN拨号配置'
+        },
+        'PPP Server': {
+            '&': { remove: 0 }
+        },
+        'PPP Client': {
+            '&': { remove: 0 }
+        },
+        'PPP Scanner': 0,
+        'PPTP Server': 0,
+        'PPTP Server Binding': {
+            '&': { remove: 0 }
+        },
+        'PPTP Client': {
+            '&': {
+                remove: 0,
+                set: { name: '确定' },
+                cancel: { name: '取消' },
+                apply: { name: '应用' }
+            },
+            General: {
+                Name: { name: 'VPN线路配置名称', ro: true },
+                Type: { name: '拨号类型' },
+                'Actual MTU': 0,
+                'Max MTU': 0,
+                'Max MRU': 0,
+                MRRU: 0
+            },
+            'Dial Out': {
+                'Connect To': { name: 'VPN服务器地址' },
+                User: { name: 'VPN帐号' },
+                Password: { name: 'VPN密码' },
+                Profile: 0,
+                'Keepalive Timeout': 0,
+                'Dial On Demand': 0,
+                'Add Default Route': 0,
+                'Default Route Distance': 0,
+                Allow: 0,
+                'Use Peer DNS': 0
+            },
+            Status: {
+                'Last Link Down Time': { name: '上次下线时间' },
+                'Last Link Up Time': { name: '上次上线时间' },
+                'Link Downs': { name: '连接次数' },
+                Uptime: { name: '在线时间' },
+                Encoding: 0,
+                MTU: { name: ' 当前 MTU 值' },
+                MRU: { name: ' 当前 MRU 值' },
+                'Local Address': { name: '本地地址' },
+                'Remote Address': { name: '远程地址' }
+            },
+            Traffic: {
+                'Tx/Rx Rate': 0,
+                'Tx/Rx Packet Rate': 0,
+                'FP Tx/Rx Rate': 0,
+                'FP Tx/Rx Packet Rate': 0,
+                'Tx/Rx Bytes': 0,
+                'Tx/Rx Packets': 0,
+                'Tx/Rx Drops': 0,
+                'Tx/Rx Errors': 0,
+                'Byte Graph': 0,
+                'Packet Graph': 0
+            },
+            Torch: 0,
+            Enabled: { name: '是否启用此线路' },
+            Comment: { name: '备注' }
+        },
+        'SSTP Server': 0,
+        'SSTP Server Binding': {
+            '&': { remove: 0 }
+        },
+        'SSTP Client': {
+            '&': {
+                remove: 0,
+                set: 0,
+                cancel: { name: '返回/取消' },
+                apply: { name: '应用' }
+            },
+            General: {
+                tab: 0,
+                Name: { ro: true, name: '配置名称' },
+                Type: 0,
+                'Actual MTU': 0,
+                'Max MTU': 0,
+                MRRU: 0
+            },
+            'Dial Out': {
+                'Connect To': 0,
+                Port: 0,
+                Proxy: 0,
+                'Proxy Port': 0,
+                Certificate: 0,
+                'TLS Version': 0,
+                'Verify Server Certificate': 0,
+                'Verify Server Address From Certificate': 0,
+                PFS: 0,
+                User: 0,
+                Password: 0,
+                Profile: 0,
+                'Keepalive Timeout': 0,
+                'Dial On Demand': 0,
+                'Add Default Route': 0,
+                'Default Route Distance': 0,
+                Allow: 0
+            },
+            Status: {
+                'Last Link Down Time': 0,
+                'Last Link Up Time': 0,
+                'Link Downs': 0,
+                Uptime: 0,
+                Encoding: 0,
+                MTU: 0,
+                MRU: 0,
+                'Local Address': { name: '远程维护地址' },
+                'Remote Address': 0
+            },
+            Traffic: {
+                'Tx/Rx Rate': 0,
+                'Tx/Rx Packet Rate': 0,
+                'FP Tx/Rx Rate': 0,
+                'FP Tx/Rx Packet Rate': 0,
+                'Tx/Rx Bytes': 0,
+                'Tx/Rx Packets': 0,
+                'Tx/Rx Drops': 0,
+                'Tx/Rx Errors': 0,
+                'Byte Graph': 0,
+                'Packet Graph': 0
+            },
+            Torch: 0,
+            Enabled: 0,
+            Comment: { name: '备注' },
+            Dynamic: 0,
+            running: 0,
+            slave: 0,
+            undefined: { name: '备注' }
+        },
+        'L2TP Server': 0,
+        'L2TP Server Binding': {
+            '&': { remove: 0 }
+        },
+        'L2TP Client': {
+            '&': {
+                remove: 0,
+                set: { name: '确定' },
+                cancel: { name: '返回/取消' },
+                apply: { name: '应用' }
+            },
+            Torch: 0,
+            slave: 0,
+            General: {
+                Name: { name: 'VPN线路配置名称', ro: true },
+                'Actual MTU': 0,
+                'Max MTU': 0,
+                'Max MRU': 0,
+                MRRU: 0,
+                tab: 0,
+                Type: { name: '协议类型' }
+            },
+            'Dial Out': {
+                Profile: 0,
+                'Keepalive Timeout': 0,
+                'Allow Fast Path': 0,
+                Allow: 0,
+                'Connect To': { name: 'VPN服务器地址' },
+                User: { name: '用户名', separator: 0 },
+                Password: { name: '密码' },
+                'Use IPsec': { name: '是否启用秘钥/IP sec', separator: 0 },
+                'IPsec Secret': { name: '密钥' },
+                'Dial On Demand': 0,
+                'Add Default Route': 0,
+                'Default Route Distance': 0,
+                tab: 0,
+                'Src. Address': 0,
+                'Use Peer DNS': 0
+            },
+            Enabled: { name: '是否启用此线路' },
+            Status: {
+                MTU: { name: ' 当前 MTU 值' },
+                MRU: { name: ' 当前 MRU 值' },
+                tab: 0,
+                'Last Link Down Time': { name: '最近一次离线时间' },
+                'Last Link Up Time': { name: '最后一次上线时间' },
+                'Link Downs': { name: '拨号次数' },
+                Uptime: { name: '在线时长' },
+                Encoding: 0,
+                'Local Address': { name: '本地地址', separator: 0 },
+                'Remote Address': { name: '远程服务器地址' }
+            },
+            Traffic: {
+                tab: 0,
+                'Tx/Rx Rate': 0,
+                'Tx/Rx Packet Rate': 0,
+                'FP Tx/Rx Rate': 0,
+                'FP Tx/Rx Packet Rate': 0,
+                'Tx/Rx Bytes': 0,
+                'Tx/Rx Packets': 0,
+                'Tx/Rx Drops': 0,
+                'Tx/Rx Errors': 0,
+                'Byte Graph': 0,
+                'Packet Graph': 0
+            },
+            Comment: { name: '备注' },
+            Dynamic: 0,
+            running: 0,
+            undefined: { name: '备注' }
+        },
+        'OVPN Server': 0,
+        'OVPN Server Binding': {
+            '&': { remove: 0 }
+        },
+        'OVPN Client': {
+            '&': {
+                remove: 0,
+                set: { name: '确认并返回' },
+                cancel: { name: '取消并返回' },
+                apply: { name: '应用' }
+            },
+            General: {
+                Name: { ro: true, name: 'VPN线路配置名称' },
+                Type: { name: '协议类型' },
+                'Actual MTU': 0,
+                'MAC Address': 0,
+                'Max MTU': 0
+            },
+            'Dial Out': {
+                'Connect To': { name: 'VPN服务器地址' },
+                Port: { name: '端口' },
+                User: { name: '用户名' },
+                Password: { name: '密码' },
+                Profile: 0,
+                Certificate: 0,
+                'Verify Server Certificate': 0,
+                'Auth.': 0,
+                Cipher: 0,
+                'Use Peer DNS': 0,
+                'Add Default Route': 0,
+                Mode: 0
+            },
+            Status: {
+                'Last Link Down Time': { name: '最近一次离线时间 ' },
+                'Last Link Up Time': { name: '最后一次上线时间 ' },
+                'Link Downs': { name: '拨号次数' },
+                Uptime: { name: '持续在线时长' },
+                'Local Address': { name: '本地地址' },
+                'Remote Address': { name: '远程服务器地址' },
+                MTU: { name: '当前 MTU 值' }
+            },
+            Traffic: {
+                'Tx/Rx Rate': 0,
+                'Tx/Rx Packet Rate': 0,
+                'FP Tx/Rx Rate': 0,
+                'FP Tx/Rx Packet Rate': 0,
+                'Tx/Rx Bytes': 0,
+                'Tx/Rx Packets': 0,
+                'Tx/Rx Drops': 0,
+                'Tx/Rx Errors': 0,
+                'Byte Graph': 0,
+                'Packet Graph': 0
+            },
+            Torch: 0,
+            Enabled: { name: '是否启用此线路' },
+            Comment: { name: '备注' }
+        },
+        'PPPoE Server Binding': {
+            '&': { remove: 0 }
+        },
+        'PPPoE Client': {
+            '&': {
+                remove: 0,
+                set: { name: '保存并返回' },
+                cancel: { name: '返回上级' },
+                apply: { name: '保存修改' }
+            },
+            General: {
+                'Actual MTU': 0,
+                'Max MTU': 0,
+                'Max MRU': 0,
+                MRRU: 0,
+                Interfaces: { name: '接口', ro: true },
+                tab: 0,
+                Name: 0,
+                Type: 0
+            },
+            'Dial Out': {
+                Service: 0,
+                'AC Name': 0,
+                Profile: 0,
+                'Keepalive Timeout': 0,
+                User: { name: '用户名' },
+                Password: { name: '密码' },
+                'Dial On Demand': 0,
+                'Use Peer DNS': 0,
+                'Add Default Route': 0,
+                'Default Route Distance': 0,
+                Allow: 0,
+                tab: 0
+            },
+            'PPPoE Scan': 0,
+            Invalid: 0,
+            Torch: 0,
+            Enabled: { name: '启用' },
+            Dynamic: 0,
+            running: 0,
+            slave: 0,
+            Status: {
+                'Last Link Down Time': { name: '最后一次离线时间' },
+                'Last Link Up Time': { name: '最后一次上线时间' },
+                Uptime: { name: '在线时长' },
+                Encoding: 0,
+                MTU: 0,
+                MRU: 0,
+                'Local Address': { name: '分配的本地地址' },
+                'Remote Address': { name: '服务器地址' },
+                'Active Links': 0,
+                'Active Service Name': 0,
+                'Active AC Name': 0,
+                'AC MAC Address': 0,
+                tab: 0,
+                'Link Downs': { name: '掉线次数' }
+            },
+            Traffic: {
+                'Tx/Rx Rate': 0,
+                'Tx/Rx Packet Rate': 0,
+                'FP Tx/Rx Rate': 0,
+                'FP Tx/Rx Packet Rate': 0,
+                'Tx/Rx Bytes': 0,
+                'Tx/Rx Packets': 0,
+                'Tx/Rx Drops': 0,
+                'Tx/Rx Errors': 0,
+                'Byte Graph': 0,
+                'Packet Graph': 0
+            },
+            Comment: 0
+        },
+        'PPPoE Scan': 0,
+        'PPPoE Servers': 0,
+        Secrets: 0,
+        Profiles: 0,
+        'Active Connections': 0,
+        'L2TP Secrets': 0,
+        name: 'VPN/拨号配置'
+    },
+    Interfaces: 0,
+    System: {
+        License: 0,
+        'Auto Upgrade': 0,
+        Certificates: 0,
+        Clock: {
+            Clock: {
+                '&': {
+                    apply: { name: '确定' },
+                    title: '做最稳定的软改路由器-By Wendy'
+                },
+                Time: {
+                    Time: { name: '时间', ro: 0 },
+                    Date: { name: '日期', ro: 0 },
+                    'Time Zone Autodetect': 0,
+                    'Time Zone Name': { name: '时区', ro: true },
+                    'GMT Offset': 0,
+                    'DST Active': 0
+                },
+                'Manual Time Zone': {
+                    'Time Zone': 0,
+                    'DST Delta': 0,
+                    'DST Start': 0,
+                    'DST End': 0
+                }
+            },
+            name: '时钟'
+        },
+        Console: 0,
+        Disks: 0,
+        History: 0,
+        Identity: 0,
+        LEDs: 0,
+        Packages: 0,
+        Password: {
+            Change: {
+                '&': {
+                    start: { name: '保存并返回' },
+                    cancel: { name: '返回上级' },
+                    title: '做最稳定的软改路由器-By Wendy'
+                },
+                'Old Password': { name: '原密码（默认密码为空）', note: '这个是路由器登录密码，不是wifi密码，请慎重修改，一般不要修改' },
+                'New Password': { name: '输入新密码' },
+                'Confirm Password': { name: '重复新密码' }
+            },
+            name: '修改路由器登录密码'
+        },
+        Ports: 0,
+        'Reset Configuration': 0,
+        Resources: {
+            PCI: 0,
+            USB: 0,
+            CPU: 0,
+            IRQ: 0,
+            name: '设备资源',
+            Resources: {
+                '&': { title: '做最稳定的软改路由器-By Wendy' },
+                Uptime: { name: '运行时间' },
+                'Free Memory': { name: '空闲内存' },
+                'Total Memory': { name: '总内存' },
+                CPU: { name: 'CPU型号' },
+                'CPU Count': { name: 'CPU数量' },
+                'CPU Frequency': { name: 'CPU频率' },
+                'CPU Load': { name: 'CPU占用' },
+                'Free HDD Space': { name: '可用磁盘空间' },
+                'Total HDD Size': { name: '总磁盘容量' },
+                'Sector Writes Since Reboot': { name: '引导扇区写入' },
+                'Total Sector Writes': { name: '总扇区写入' },
+                'Architecture Name': { name: '内核名称' },
+                'Board Name': { name: '设备型号' },
+                Version: { name: '系统版本' },
+                'Build Time': 0,
+                'Factory Software': 0
+            }
+        },
+        Routerboard: 0,
+        'SNTP Client': 0,
+        Logging: 0,
+        Reboot: { name: '重启路由' },
+        Scripts: {
+            name: '一键修改',
+            Jobs: 0,
+            Environment: 0,
+            Scripts: {
+                '&': {
+                    title: '做最稳定的软改路由器-By Wendy',
+                    remove: 0,
+                    cancel: { name: '关闭' },
+                    apply: { name: '应用' },
+                    set: 0,
+                    name: '做最稳定的软改路由器-By Wendy'
+                },
+                'Run Script': { name: '执行修改' },
+                'Dont Require Permissions': 0,
+                Policy: 0,
+                Source: 0,
+                Comment: 0,
+                Owner: 0,
+                Name: { name: '名称', ro: true },
+                'Last Time Started': { name: '最近一次执行时间' },
+                'Run Count': { name: '总计执行次数' }
+            }
+        },
+        Shutdown: { name: '关机' },
+        'Special Login': 0,
+        Users: 0,
+        Watchdog: 0,
+        name: '脚本/系统设置',
+        Note: 0,
+        Scheduler: 0,
+        Health: 0,
+        LCD: 0,
+        'NTP Client': 0,
+        'NTP Server': 0,
+        RouterBOARD: 0
+    },
+    Status: {
+        Status: {
+            '4': { alias: 'Interfaces:Ethernet:*3:Traffic:Tx/Rx Bytes', name: '总流量（发送/接收）', order: 3, tab: '本地网络动态信息' },
+            '5': { alias: 'Interfaces:Ethernet:*3:Traffic:Tx/Rx Rate', name: '实时流量（发送/接收）', order: 4 },
+            '6': { alias: 'Interfaces:Ethernet:*3:Traffic:Byte Graph', name: 'Tx 发送 / Rx 接收', order: 5 },
+            '9': { alias: 'System:Clock:Clock:Time:Time', tab: '路由器信息', name: '路由器当前时间', order: 9 },
+            '10': { alias: 'System:Resources:Resources:CPU Load', name: 'CPU 占用率', order: 10 },
+            '11': { alias: 'System:Resources:Resources:Uptime', name: '本次已运行时间', order: 11 },
+            '19': { alias: 'Interfaces:Ethernet:*2:General:MAC Address', name: 'WAN MAC 地址' },
+            '20': { alias: 'Interfaces:Ethernet:*2:Status:Rate', order: 8, name: 'WAN 接口速率' },
+            '21': { alias: 'IP:DHCP Client:DHCP Client:*1:Status:IP Address', name: 'WAN上级分配地址', order: 7 },
+            '22': { alias: 'IP:DHCP Client:DHCP Client:*1:Status:Gateway', name: 'WAN上级网关', order: 6 },
+            '23': { alias: 'PPP:SSTP Client:*9:Status:Local Address', name: '远程维护地址', order: 1 },
+            '24': { alias: 'IP:Cloud:Cloud:Public Address', name: '宽带公网IP', order: 0, tab: '做最稳定的软改路由器-文迪网络' },
+            '&': {
+                undefined: { title: '做最稳定的软改路由器-By Wendy' }
+            }
+        },
+        name: 'ROS路由状态'
+    },
+    Graphs: 0,
+    Log: {
+        Log: {
+            '&': { title: '做最稳定的软改路由器-By Wendy' }
+        },
+        name: '日志查看'
+    },
+    'Hide Passwords': 0,
+    'Safe Mode': 0,
+    Undo: { name: '撤销操作' },
+    Redo: { name: '重新操作' },
+    'Dot1X': 0,
+    'IPv6': 0,
+    KVM: 0
+}
