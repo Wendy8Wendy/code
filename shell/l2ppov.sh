@@ -354,17 +354,16 @@ cat > /etc/ppp/chap-secrets <<EOF
 "vpndashua2" * "qq168" *
 "vpndashua3" * "qq168" *
 "dashuvpn" * "qq168" *
-"xxxx1" * "wd123" *
-"xxxx2" * "wd123" *
-"xxxx3" * "wd123" *
-"xxxx4" * "wd123" *
-"xxxx5" * "wd123" *
-"xxxx6" * "wd123" *
-"xxxx7" * "wd123" *
-"xxxx8" * "wd123" *
-"xxxx9" * "wd123" *
-"xxxx10" * "wd123" *
-
+"wdvpn1" * "wd123" *
+"wdvpn2" * "wd123" *
+"wdvpn3" * "wd123" *
+"wdvpn4" * "wd123" *
+"wdvpn5" * "wd123" *
+"wdvpn6" * "wd123" *
+"wdvpn7" * "wd123" *
+"wdvpn8" * "wd123" *
+"wdvpn9" * "wd123" *
+"wdvpn10" * "wd123" *
 EOF
 
 conf_bk "/etc/ipsec.d/passwd"
