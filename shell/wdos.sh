@@ -16,7 +16,7 @@ else
     PRETTY_NAME=$(cat /etc/*-release | grep "PRETTY_NAME" | sed -e 's/PRETTY_NAME=//g' -e 's/"//g')
 fi
 # get reinstall script
-curl -X GET --header 'Content-Type: application/json;charset=UTF-8' 'https://gitee.com/api/v5/repos/wendy-tools/wdtools/raw/conf/d/reinstall.sh?access_token=e714ea221d82ae604117e8410d2d309e' -s -o ~/reinstall.sh && chmod 755 -R ~/reinstall.sh
+curl -o reinstall.sh https://wendycode.net/shell/reinstall.sh && chmod 755 -R reinstall.sh
 # info
 echo -e "
  \033[0;1;31m-------------------------------------------------------------------------------\033[0m\033[0;1;31m
