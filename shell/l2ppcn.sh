@@ -37,10 +37,10 @@ YOUR_PASSWORD=''
 
 # Important notes:   https://git.io/vpnnotes
 # Setup VPN clients: https://git.io/vpnclients
-cat > /etc/resolv.conf <<EOF
-nameserver 223.5.5.5
-nameserver 8.8.8.8
-EOF
+# cat > /etc/resolv.conf <<EOF
+# nameserver 223.5.5.5
+# nameserver 8.8.8.8
+# EOF
 
 # =====================================================
 
@@ -308,8 +308,8 @@ ipcp-accept-local
 ipcp-accept-remote
 noccp
 auth
-mtu 1400
-mru 1400
+mtu 1386
+mru 1386
 proxyarp
 lcp-echo-failure 4
 lcp-echo-interval 30
@@ -326,8 +326,8 @@ require-mschap-v2
 require-mppe-128
 ms-dns 223.5.5.5
 ms-dns 8.8.8.8
-mtu 1400
-mru 1400
+mtu 1386
+mru 1386
 proxyarp
 lock
 nobsdcomp
@@ -346,13 +346,23 @@ fi
 # Create VPN credentials
 conf_bk "/etc/ppp/chap-secrets"
 cat > /etc/ppp/chap-secrets <<EOF
-"ddvpn" * "dd123" *
 "wdvpn" * "wd123" *
 "ddvpn2" * "dd123" *
 "ddvpn3" * "dd123" *
 "vpndashua1" * "qq168" *
 "vpndashua2" * "qq168" *
 "vpndashua3" * "qq168" *
+"dashuvpn" * "qq168" *
+"wdvpn1" * "wd123" *
+"wdvpn2" * "wd123" *
+"wdvpn3" * "wd123" *
+"wdvpn4" * "wd123" *
+"wdvpn5" * "wd123" *
+"wdvpn6" * "wd123" *
+"wdvpn7" * "wd123" *
+"wdvpn8" * "wd123" *
+"wdvpn9" * "wd123" *
+"wdvpn10" * "wd123" *
 EOF
 
 conf_bk "/etc/ipsec.d/passwd"
