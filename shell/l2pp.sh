@@ -37,10 +37,10 @@ YOUR_PASSWORD=''
 
 # Important notes:   https://git.io/vpnnotes
 # Setup VPN clients: https://git.io/vpnclients
-cat > /etc/resolv.conf <<EOF
-nameserver 223.5.5.5
-nameserver 8.8.8.8
-EOF
+# cat > /etc/resolv.conf <<EOF
+# nameserver 8.8.8.8
+# nameserver 223.5.5.5
+# EOF
 
 # =====================================================
 
@@ -220,8 +220,8 @@ L2TP_LOCAL=${VPN_L2TP_LOCAL:-'172.36.82.1'}
 L2TP_POOL=${VPN_L2TP_POOL:-'172.36.82.10-172.36.82.250'}
 XAUTH_NET=${VPN_XAUTH_NET:-'172.36.82.0/24'}
 XAUTH_POOL=${VPN_XAUTH_POOL:-'172.36.82.10-172.36.82.250'}
-DNS_SRV1=${VPN_DNS_SRV1:-'223.5.5.5'}
-DNS_SRV2=${VPN_DNS_SRV2:-'8.8.8.8'}
+DNS_SRV1=${VPN_DNS_SRV1:-'8.8.8.8'}
+DNS_SRV2=${VPN_DNS_SRV2:-'223.5.5.5'}
 DNS_SRVS="\"$DNS_SRV1 $DNS_SRV2\""
 [ -n "$VPN_DNS_SRV1" ] && [ -z "$VPN_DNS_SRV2" ] && DNS_SRVS="$DNS_SRV1"
 
@@ -308,14 +308,15 @@ ipcp-accept-local
 ipcp-accept-remote
 noccp
 auth
-mtu 1400
-mru 1400
+mtu 1386
+mru 1386
 proxyarp
 lcp-echo-failure 4
 lcp-echo-interval 30
 connect-delay 5000
 logfile /var/log/xl2tpd.log
 ms-dns 223.5.5.5
+ms-dns 8.8.8.8
 EOF
 cat > /etc/ppp/options.pptpd <<EOF
 name pptpd
@@ -324,10 +325,10 @@ refuse-chap
 refuse-mschap
 require-mschap-v2
 require-mppe-128
-ms-dns 223.5.5.5
 ms-dns 8.8.8.8
-mtu 1400
-mru 1400
+ms-dns 223.5.5.5
+mtu 1386
+mru 1386
 proxyarp
 lock
 nobsdcomp
@@ -346,13 +347,24 @@ fi
 # Create VPN credentials
 conf_bk "/etc/ppp/chap-secrets"
 cat > /etc/ppp/chap-secrets <<EOF
-"ddvpn" * "dd123" *
 "wdvpn" * "wd123" *
 "ddvpn2" * "dd123" *
 "ddvpn3" * "dd123" *
 "vpndashua1" * "qq168" *
 "vpndashua2" * "qq168" *
 "vpndashua3" * "qq168" *
+"dashuvpn" * "qq168" *
+"xxxx1" * "wd123" *
+"xxxx2" * "wd123" *
+"xxxx3" * "wd123" *
+"xxxx4" * "wd123" *
+"xxxx5" * "wd123" *
+"xxxx6" * "wd123" *
+"xxxx7" * "wd123" *
+"xxxx8" * "wd123" *
+"xxxx9" * "wd123" *
+"xxxx10" * "wd123" *
+
 EOF
 
 conf_bk "/etc/ipsec.d/passwd"
