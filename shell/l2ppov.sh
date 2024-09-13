@@ -310,7 +310,7 @@ noccp
 auth
 mtu 1386
 mru 1386
-proxyarp
+# proxyarp
 lcp-echo-failure 4
 lcp-echo-interval 30
 connect-delay 5000
@@ -329,7 +329,7 @@ ms-dns 8.8.8.8
 ms-dns 223.5.5.5
 mtu 1386
 mru 1386
-proxyarp
+# proxyarp
 lock
 nobsdcomp
 novj
@@ -553,7 +553,7 @@ Connect to your new VPN with these details:
 
 Server IP: $PUBLIC_IP
 IPsec PSK: 666888
-Username: ddvpn
+Username: wdvpn
 Password: dd123
 
 Write these down. You'll need them to connect!
