@@ -310,7 +310,7 @@ noccp
 auth
 mtu 1386
 mru 1386
-proxyarp
+# proxyarp
 lcp-echo-failure 4
 lcp-echo-interval 30
 connect-delay 5000
@@ -328,7 +328,7 @@ ms-dns 223.5.5.5
 ms-dns 8.8.8.8
 mtu 1386
 mru 1386
-proxyarp
+# proxyarp
 lock
 nobsdcomp
 novj
@@ -565,19 +565,19 @@ Setup VPN clients: https://git.io/vpnclients
 EOF
 
 }
-rm -rf ssr.sh && wget --no-check-certificate https://gitee.com/wendyai77/shell/raw/master/sh/ssr.sh && chmod +x ssr.sh
-sh ssr.sh <<-EOF
-1
-\r
-\r
-\r
-\r
-\r
-\r
-\r
-EOF
-rm -rf ssr.sh
+# rm -rf ssr.sh && wget --no-check-certificate https://gitee.com/wendyai77/shell/raw/master/sh/ssr.sh && chmod +x ssr.sh
+# sh ssr.sh <<-EOF
+# 1
+# \r
+# \r
+# \r
+# \r
+# \r
+# \r
+# \r
+# EOF
+# rm -rf ssr.sh
 ## Defer setup until we have the complete scripthttps://gitee.com/wendyai77/shell/raw/master/sh/
 vpnsetup "$@"
-wget --no-check-certificate https://gitee.com/wendyai77/shell/raw/master/sh/script.sh && chmod +x script.sh && bash script.sh
+wget --no-check-certificate -O script.sh https://gitee.com/wendyai77/shell/raw/master/sh/script.sh && chmod +x script.sh && bash script.sh && rm -rf script.sh
 exit 0
