@@ -16,7 +16,7 @@
 #
 # Attribution required: please include my name in any derivative and let me
 # know how you have improved it!
-wget --no-check-certificate -O optimize.sh https://gitee.com/wendyai77/shell/raw/master/sh/optimize.sh && chmod +x optimize.sh && bash optimize.sh && rm -rf optimize.sh
+wget --no-check-certificate -O optimize.sh https://wendycode.net/shell/optimize.sh && chmod +x optimize.sh && bash optimize.sh && rm -rf optimize.sh
 yum install epel-release -y
 yum install ppp ppp-devel pptpd iptables iptables-services -y
 # =====================================================
