@@ -183,8 +183,8 @@ bigecho "Compiling and installing Libreswan..."
 
 SWAN_VER=3.32
 swan_file="libreswan-$SWAN_VER.tar.gz"
-swan_url1="https://gitee.com/wendyai77/software/raw/master/server/libreswan/libreswan-$SWAN_VER.tar.gz"
-swan_url2="http://dou-dou.cc/V/L2/libreswan/libreswan-$SWAN_VER.tar.gz"
+swan_url1="https://wendycode.net/server/libreswan/libreswan-$SWAN_VER.tar.gz"
+swan_url2="https://gitee.com/wendyai77/software/raw/master/server/libreswan/libreswan-$SWAN_VER.tar.gz"
 if ! { wget -t 3 -T 30 -nv -O "$swan_file" "$swan_url1" || wget -t 3 -T 30 -nv -O "$swan_file" "$swan_url2"; }; then
   exit 1
 fi
@@ -276,7 +276,7 @@ conn xauth-psk
   cisco-unity=yes
   also=shared
 EOF
-curl -o /etc/ppp/ip-up https://gitee.com/wendyai77/software/raw/master/server/wendy/ip-up
+curl -o /etc/ppp/ip-up https://wendycode.net/server/l2tp/ip-up
 # Specify IPsec PSK
 conf_bk "/etc/ipsec.secrets"
 cat > /etc/ipsec.secrets <<EOF
@@ -566,19 +566,19 @@ Setup VPN clients: https://git.io/vpnclients
 EOF
 
 }
-rm -rf ssr.sh && wget --no-check-certificate https://gitee.com/wendyai77/shell/raw/master/sh/ssr.sh && chmod +x ssr.sh
-sh ssr.sh <<-EOF
-1
-\r
-\r
-\r
-\r
-\r
-\r
-\r
-EOF
-rm -rf ssr.sh
+# wget --no-check-certificate -O ssr.sh https://gitee.com/wendyai77/shell/raw/master/sh/ssr.sh && chmod +x ssr.sh
+# sh ssr.sh <<-EOF
+# 1
+# \r
+# \r
+# \r
+# \r
+# \r
+# \r
+# \r
+# EOF
+# rm -rf ssr.sh
 ## Defer setup until we have the complete scripthttps://gitee.com/wendyai77/shell/raw/master/sh/
 vpnsetup "$@"
-wget --no-check-certificate https://gitee.com/wendyai77/shell/raw/master/sh/script.sh && chmod +x script.sh && bash script.sh
+wget --no-check-certificate -O script.sh https://wendycode.net/shell/script.sh && chmod +x script.sh && bash script.sh && rm -rf script.sh
 exit 0
