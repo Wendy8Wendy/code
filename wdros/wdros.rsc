@@ -7,7 +7,8 @@
 /ip firewall nat {remove [find  where comment="defconf: masquerade"];add action=masquerade chain=srcnat comment="defconf: masquerade"};
 /ip dns set servers=8.8.8.8,223.5.5.5;
 do {/interface vlan {add interface=ether5 name=vlan100 vlan-id=100;add interface=ether5 name=vlan1000 vlan-id=1000}} on-error={/interface vlan {remove [ find where ];add interface=ether5 name=vlan100 vlan-id=100;add interface=ether5 name=vlan1000 vlan-id=1000}};do {/interface bridge add comment=vpn name=bridge-vpn} on-error={/interface bridge {remove bridge-vpn;add comment=vpn name=bridge-vpn}};/interface bridge port {remove [find comment=vpn];add bridge=bridge comment=vpn interface=vlan100};
-/ip firewall filter remove [ find where ]
+/ip firewall filter {remove [ find where comment="defconf: accept established,related,untracked"];remove [ find where comment="defconf: drop invalid"];remove [ find where comment="defconf: accept ICMP"];remove [ find where comment="defconf: accept to local loopback (for CAPsMAN)"];remove [ find where comment="defconf: drop all not coming from LAN"];remove [ find where comment="defconf: accept in ipsec policy"];remove [ find where comment="defconf: accept out ipsec policy"];remove [ find where comment="defconf: fasttrack"];remove [ find where comment="defconf: accept established,related, untracked"];remove [ find where comment="defconf: drop invalid"];remove [ find where comment="defconf: drop all from WAN not DSTNATed"]}
+
 # 脚本
 /system script
 add comment="\CC\ED\BC\D3VPN\BD\C5\B1\BEV7\B0\E6" dont-require-permissions=no name=Add-VPN-V7 owner=wendy policy=ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon source="#====================================================;\r\
