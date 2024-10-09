@@ -1394,14 +1394,21 @@
                 "Dynamic Servers": 0,
                 "Servers": {
                     "name": "静态DNS服务器"
-                }
+                },
+                "mDNS Repeater Interfaces": 0,
+                "VRF": 0
             },
             "Static": 0,
             "Cache": {
-                "name": "DNS本地缓存"
-            }
+                "name": "DNS本地缓存",
+                "Flush Cache": {
+                    "name": "刷新本地DNS缓存"
+                }
+            },
+            "Adlist": 0
         },
-        "NAT PMP": 0
+        "NAT PMP": 0,
+        "Media": 0
     },
     "MPLS": 0,
     "IPv6": 0,
