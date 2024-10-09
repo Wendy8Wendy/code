@@ -1686,41 +1686,13 @@
         "Status": {
             "20": {
                 "alias": "IP:Addresses:Address:*1:Address",
-                "name": "LAN 地址"
-            },
-            "21": {
-                "alias": "Interfaces:Ethernet:*1:Traffic:Tx/Rx Rate",
-                "name": "发送/接收 字节速率"
+                "name": "LAN 地址",
+                "order": 12
             },
             "22": {
                 "alias": "Interfaces:Ethernet:*1:Traffic:Tx/Rx Packet Rate",
-                "name": "发送/接收 包速率"
-            },
-            "23": {
-                "alias": "Interfaces:Ethernet:*1:Traffic:Tx/Rx Bytes",
-                "name": "发送/接收 字节数"
-            },
-            "24": {
-                "alias": "Interfaces:Ethernet:*1:Traffic:Tx/Rx Packets",
-                "name": "发送/接收 数据包"
-            },
-            "26": {
-                "alias": "Interfaces:Ethernet:*2:Traffic:Tx/Rx Rate",
-                "name": "发送/接收 字节速率"
-            },
-            "27": {
-                "alias": "Interfaces:Ethernet:*2:Traffic:Tx/Rx Packet Rate",
                 "name": "发送/接收 包速率",
-                "order": 15
-            },
-            "28": {
-                "alias": "Interfaces:Ethernet:*2:Traffic:Tx/Rx Bytes",
-                "name": "发送/接收 字节数",
-                "order": 17
-            },
-            "29": {
-                "alias": "Interfaces:Ethernet:*2:Traffic:Tx/Rx Packets",
-                "name": "发送/接收 数据包"
+                "order": 19
             },
             "30": {
                 "alias": "Interfaces:Ethernet:*1:Traffic:Byte Graph",
@@ -1733,16 +1705,12 @@
             "32": {
                 "alias": "Interfaces:Ethernet:*2:Traffic:Byte Graph",
                 "name": "WAN 字节速率曲线图",
-                "order": 20
+                "order": 21
             },
             "33": {
                 "alias": "Interfaces:Ethernet:*2:Traffic:Packet Graph",
-                "name": "WAN 包速率曲线图"
-            },
-            "34": {
-                "alias": "Interfaces:Ethernet:*2:Status:Rate",
-                "name": "WAN口网卡速率",
-                "order": 18
+                "name": "WAN 包速率曲线图",
+                "order": 20
             },
             "35": {
                 "alias": "IP:Cloud:Cloud:Cloud:Public Address",
@@ -1752,37 +1720,75 @@
             "36": {
                 "alias": "IP:DHCP Client:DHCP Client:*1:Status:Gateway",
                 "name": "上级网关",
-                "order": 19
-            },
-            "37": {
-                "alias": "IP:Addresses:Address:*10:Address",
-                "name": "WAN 地址",
-                "order": 14
+                "order": 15
             },
             "38": {
                 "alias": "System:Clock:Clock:Time:Date",
                 "name": "当前日期",
-                "order": 5
+                "order": 1
             },
             "39": {
                 "alias": "System:Clock:Clock:Time:Time",
                 "name": "当前时间",
-                "order": 4
+                "order": 0
             },
             "40": {
                 "alias": "System:Resources:Resources:Architecture Name",
-                "order": 13,
+                "order": 5,
                 "name": "系统架构"
             },
             "41": {
                 "alias": "System:Resources:Resources:Version",
-                "order": 12,
-                "name": "固件版本"
+                "name": "固件版本",
+                "order": 2
             },
             "42": {
                 "alias": "System:Resources:Resources:Uptime",
-                "order": 11,
                 "name": "不间断运行时长"
+            },
+            "43": {
+                "alias": "Interfaces:Ethernet:*1:General:MAC Address",
+                "name": "WAN MAC",
+                "order": 14
+            },
+            "44": {
+                "alias": "Interfaces:Ethernet:*1:Status:Rate",
+                "name": "WAN口网卡速率"
+            },
+            "45": {
+                "alias": "Interfaces:Ethernet:*1:Traffic:Tx/Rx Rate",
+                "name": "发送/接收 字节速率",
+                "order": 17
+            },
+            "47": {
+                "alias": "Interfaces:Ethernet:*1:Traffic:Tx/Rx Bytes",
+                "name": "发送/接收 字节数",
+                "order": 18
+            },
+            "48": {
+                "alias": "System:Resources:Resources:CPU Load",
+                "order": 6,
+                "name": "CPU负载率"
+            },
+            "49": {
+                "alias": "System:Resources:Resources:Board Name",
+                "order": 8,
+                "name": "路由板名称"
+            },
+            "50": {
+                "alias": "System:Resources:Resources:CPU Count",
+                "order": 7,
+                "name": "CPU核心数"
+            },
+            "51": {
+                "alias": "System:Resources:Resources:Free Memory",
+                "order": 4,
+                "name": "空闲内存"
+            },
+            "52": {
+                "alias": "System:Resources:Resources:Total Memory",
+                "order": 3,
+                "name": "总内存"
             },
             "rows": 11,
             "&": {
