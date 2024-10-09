@@ -2,9 +2,10 @@
 ##############V7部分
 :put 7
 ##############V7部分
+/file remove file-name=wdros.rsc;
 } else={
 ##############V6部分
 :put 6
 ##############V6部分
+/file remove file-name=wdros.rsc;
 }
-/file remove wdros.rsc
