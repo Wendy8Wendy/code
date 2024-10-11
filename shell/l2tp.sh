@@ -390,13 +390,13 @@ ipcp-accept-local
 ipcp-accept-remote
 require-mschap-v2
 ms-dns 8.8.8.8
-ms-dns 8.8.4.4
+ms-dns 223.5.5.5
 noccp
 auth
 hide-password
 idle 1800
-mtu 1410
-mru 1410
+mtu 1280
+mru 1280
 nodefaultroute
 debug
 proxyarp
