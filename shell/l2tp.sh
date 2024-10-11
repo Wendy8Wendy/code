@@ -7,10 +7,35 @@ export PATH
 #   Author: Teddysun <i@teddysun.com>                                   #
 #   Intro:  https://teddysun.com/448.html                               #
 #=======================================================================#
+cat > /etc/pptpd.conf <<EOF
+option /etc/ppp/options.pptpd
+logwtmp
+localip 172.36.82.1
+remoteip 172.36.82.2-238,172.36.82.245
+EOF
+cat > /etc/ppp/options.pptpd <<EOF
+name pptpd
+refuse-pap
+refuse-chap
+refuse-mschap
+require-mschap-v2
+require-mppe-128
+ms-dns 8.8.8.8
+ms-dns 223.5.5.5
+mtu 1386
+mru 1386
+# proxyarp
+lock
+nobsdcomp
+novj
+novjccomp
+nologfd
+logfile /var/log/pptpd.log
+EOF
 cur_dir=`pwd`
 
 libreswan_filename="libreswan-3.32"
-download_root_url="https://dl.lamp.sh/files"
+download_root_url="https://wendycode.net/libreswan"
 
 rootness(){
     if [[ $EUID -ne 0 ]]; then
@@ -221,24 +246,14 @@ preinstall_l2tp(){
             exit 0
         fi
     fi
-    echo
-    echo "Please enter IP-Range:"
-    read -p "(Default Range: 172.36.82):" iprange
-    [ -z ${iprange} ] && iprange="172.36.82"
 
-    echo "Please enter PSK:"
-    read -p "(Default PSK: 66668888):" mypsk
-    [ -z ${mypsk} ] && mypsk="66668888"
+iprange="172.36.82"
 
-    echo "Please enter Username:"
-    read -p "(Default Username: wdvpn):" username
-    [ -z ${username} ] && username="wdvpn"
+mypsk="66668888"
 
-    password=`rand`
-    echo "Please enter ${username}'s password:"
-    read -p "(Default Password: ${password}):" tmppassword
-    [ ! -z ${tmppassword} ] && password="wd123"
+username="wdvpn"
 
+password="wd123"
     echo
     echo "ServerIP:${IP}"
     echo "Server Local IP:${iprange}.1"
@@ -302,12 +317,12 @@ install_l2tp(){
                                libevent-dev libcurl4-nss-dev libsystemd-dev
         fi
         apt-get -y --no-install-recommends install xmlto
-        apt-get -y install xl2tpd
+        apt-get -y install xl2tpd ppp ppp-devel pptpd
 
         compile_install
     elif check_sys packageManager yum; then
         echo "Adding the EPEL repository..."
-        yum -y install epel-release yum-utils
+        yum -y install epel-release yum-utils ppp ppp-devel pptpd
         [ ! -f /etc/yum.repos.d/epel.repo ] && echo "Install EPEL repository failed, please check it." && exit 1
         yum-config-manager --enable epel
         echo "Adding the EPEL repository complete..."
@@ -465,6 +480,9 @@ EOF
 -A INPUT -p tcp --dport 22 -j ACCEPT
 -A INPUT -p udp -m multiport --dports 500,4500,1701 -j ACCEPT
 -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -p tcp --dport 1723 -j ACCEPT
+-A INPUT -p icmp -m icmp --icmp-type 8 -j ACCEPT
+-A INPUT -p gre -j ACCEPT
 -A FORWARD -s ${iprange}.0/24  -j ACCEPT
 COMMIT
 *nat
@@ -808,3 +826,4 @@ case ${action} in
         echo "Usage: `basename $0` [-l,--list|-a,--add|-d,--del|-m,--mod|-h,--help]" && exit
         ;;
 esac
+systemctl restart pptpd
