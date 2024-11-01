@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="/servertab/imgs/ktwd.png">
+  <title>无情嘲讽！</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="无情嘲讽！">
+  <meta name="keywords" content="无情嘲讽！">
+  <meta name="description" content="无情嘲讽！">
+  <meta name="baidu_union_verify" content="dd9cfc69299d0d1ec9b56132dfffce6d">
+  <meta name="baidu-site-verification" content="ywmw6HyRWPJjBpvT" />
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    text-underline: none;
+    text-decoration: none;
+    font-family: "Microsoft YaHei", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+  }
+  html, body, #app {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: #333333;
+  }
+  #app {
+    padding: 60px;
+    overflow: auto;
+    box-sizing: border-box;
+    background-repeat: repeat;
+    background-image: url(background.jpeg);
+  }
+  #app::-webkit-scrollbar { width: 0 !important;}/*标题*/
+  .title {
+    padding: 0 0 60px;
+    width: 100%;
+    color: #FF6274;/*标题颜色*/
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 5px 2px 10px #0000009c;
+  }
+  .sum {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 6px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    border-bottom-right-radius: 0;
+    border: 1px solid transparent;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 4;
+  }
+  a {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    padding-bottom: 10px;
+    width: 310px;
+    height: 330px;
+    color: #0e0d0d;/*图内子色*/
+    overflow: hidden;
+    border: 1px solid #4E84E6;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: #4E84E6;
+    transition: 0.3s all;
+  }
+  .img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+  }
+  .name, .intro, .tips {/*图内字*/
+    position: absolute;
+    left: 40px;
+    width: calc(330px - 53px);
+    transition: 0.5s all;
+  }
+  .name {
+    top: 190px;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .name i {
+    position: relative;
+    top: -3px;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: white;
+    background-color: #56B962;
+  }
+  .intro {
+    top: 226px;
+    height: 110px;
+    font-size: 14px;
+  }
+  .star {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    transition: 0.5s all;
+  }
+  .tips {
+    bottom: 0;
+    left: 100%;
+    width: 312px;
+    height: 150px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 150px;
+  }
+  .tips img {
+    display: inline-block;
+    margin-right: 6px;
+    height: 36px;
+    vertical-align: sub;
+  }
+  section {
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    grid-row-gap: 50px;
+    grid-template-columns: repeat(auto-fill, 320px);
+  }
+  section a:hover {
+    top: -10px;
+    color: #333333;
+    border: 1px solid transparent;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 2px 11px 20px 0 rgba(0, 0, 0, 0.6);
+  }
+  section a:hover .name, section a:hover .intro, section a:hover .star {
+    left: -100%;
+  }
+  section a:hover .tips {
+    left: 0;
+  }
+  .back {
+    display: block;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    padding: 0;
+    margin: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    z-index: 3;
+    -webkit-background-size: 60px 60px;
+    transition: 0.3s all;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(click.png);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .back:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  </style>
+</head>
+
+<body>
+<div id="app">
+  <a class="back" title="返回上级" href="index.html"></a>
+  <div class="title">你个白嫖怪！</div>
+  <section>
+
+    <a title="你个白嫖怪" href="index.html">
+      <div class="img" style="background-image: url(imgs/haha/01.gif);"></div>
+      <p class="name">又来<i>在想啥呢</i></p>
+      <p class="intro">你个白嫖怪</p>
+      <p class="tips"><img src="imgs/click.png">点击自取其辱</p>
+    </a>
+
+    <a title="你个白嫖怪" href="index.html">
+      <div class="img" style="background-image: url(imgs/haha/02.gif);"></div>
+      <p class="name">又来<i>在想啥呢</i></p>
+      <p class="intro">你个白嫖怪</p>
+      <p class="tips"><img src="imgs/click.png">点击自取其辱</p>
+    </a>
+
+    <a title="你个白嫖怪" href="index.html">
+      <div class="img" style="background-image: url(imgs/haha/fage.gif);"></div>
+      <p class="name">又来<i>在想啥呢</i></p>
+      <p class="intro">你个白嫖怪</p>
+      <p class="tips"><img src="imgs/click.png">点击自取其辱</p>
+    </a>
+
+    <a title="你个白嫖怪" href="index.html">
+      <div class="img" style="background-image: url(imgs/haha/02.gif);"></div>
+      <p class="name">又来<i>在想啥呢</i></p>
+      <p class="intro">你个白嫖怪</p>
+      <p class="tips"><img src="imgs/click.png">点击自取其辱</p>
+    </a>
+
+    <a title="你个白嫖怪" href="index.html">
+      <div class="img" style="background-image: url(imgs/haha/01.gif);"></div>
+      <p class="name">又来<i>在想啥呢</i></p>
+      <p class="intro">你个白嫖怪</p>
+      <p class="tips"><img src="imgs/click.png">点击自取其辱</p>
+    </a>
+
+    <a title="你个白嫖怪" href="index.html">
+      <div class="img" style="background-image: url(imgs/haha/01.gif);"></div>
+      <p class="name">还来<i>在想啥呢</i></p>
+      <p class="intro">你个白嫖怪</p>
+      <p class="tips"><img src="imgs/click.png">点击自取其辱</p>
+    </a>
+
+    <a title="你个白嫖怪" href="index.html">
+      <div class="img" style="background-image: url(imgs/haha/02.gif);"></div>
+      <p class="name">还来<i>在想啥呢</i></p>
+      <p class="intro">你个白嫖怪</p>
+      <p class="tips"><img src="imgs/click.png">点击自取其辱</p>
+    </a>
+
+    <a title="你个白嫖怪" href="index.html">
+      <div class="img" style="background-image: url(imgs/haha/qs.jpeg);"></div>
+      <p class="name">还来<i>在想啥呢</i></p>
+      <p class="intro">你个白嫖怪</p>
+      <p class="tips"><img src="imgs/click.png">点击自取其辱</p>
+    </a>
+
+    <a title="你个白嫖怪" href="index.html">
+      <div class="img" style="background-image: url(imgs/haha/02.gif);"></div>
+      <p class="name">还来<i>在想啥呢</i></p>
+      <p class="intro">你个白嫖怪</p>
+      <p class="tips"><img src="imgs/click.png">点击自取其辱</p>
+    </a>
+
+    <a title="你个白嫖怪" href="index.html">
+      <div class="img" style="background-image: url(imgs/haha/01.gif);"></div>
+      <p class="name">还来<i>在想啥呢</i></p>
+      <p class="intro">你个白嫖怪</p>
+      <p class="tips"><img src="imgs/click.png">点击自取其辱</p>
+    </a>
+
+  </section>
+</div>
+</body>
+</html>
