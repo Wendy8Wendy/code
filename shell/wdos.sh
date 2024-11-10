@@ -102,8 +102,20 @@ case $N in
   22) bash reinstall.sh -r 9 -p Wd8264.. ;;
   23) bash reinstall.sh -a 8 -p Wd8264.. ;;
   24) bash reinstall.sh -a 9 -p Wd8264.. ;;
-  25) bash reinstall.sh -dd "https://gitcode.net/wendy/openwrt/uploads/76541a295b7774c04c20f4cbb5b03856/istoreos-x86-64.img.gz" ;;
-  26) bash reinstall.sh -dd "https://gitcode.net/wendy/openwrt/uploads/8b429f53b82170e64ce995f677014612/istoreos-x86-64-efi.img.gz" ;;
+  # 官方备用1
+  # 25) bash reinstall.sh -dd "https://fw21.koolcenter.com:60010/iStoreOS/x86_64/istoreos-22.03.7-2024102509-x86-64-squashfs-combined.img.gz" ;;
+  # 官方CDN
+  25) bash reinstall.sh -dd "https://dl.istoreos.com/iStoreOS/x86_64/istoreos-22.03.7-2024102509-x86-64-squashfs-combined.img.gz" ;;
+  # 官方原始链接
+  # 25) bash reinstall.sh -dd "https://fw20.koolcenter.com/iStoreOS/x86_64/istoreos-22.03.7-2024102509-x86-64-squashfs-combined.img.gz" ;;
+  # 25) bash reinstall.sh -dd "http://hk.download-wendy.cn/images/istoreos-22.03.7-2024102509-x86-64-squashfs-combined.img.gz" ;;
+  # 官方备用1
+  # 26) bash reinstall.sh -dd "https://fw21.koolcenter.com:60010/iStoreOS/x86_64/istoreos-22.03.7-2024102509-x86-64-squashfs-combined-efi.img.gz" ;;
+  # 官方CDN
+  26) bash reinstall.sh -dd "https://dl.istoreos.com/iStoreOS/x86_64/istoreos-22.03.7-2024102509-x86-64-squashfs-combined-efi.img.gz" ;;
+  # 官方原始链接
+  # 26) bash reinstall.sh -dd "https://fw20.koolcenter.com/iStoreOS/x86_64/istoreos-22.03.7-2024102509-x86-64-squashfs-combined-efi.img.gz" ;;
+  # 26) bash reinstall.sh -dd "http://hk.download-wendy.cn/images/istoreos-22.03.7-2024102509-x86-64-squashfs-combined-efi.img.gz" ;;
   88) bash "/opt/wdtools/shell/wd-a" ;;
   99) bash "/opt/wdtools/shell/wd" ;;
   *) echo "无效输入!" ;;
