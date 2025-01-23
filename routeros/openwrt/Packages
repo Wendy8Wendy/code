@@ -1,0 +1,45 @@
+Package: luci-app-store
+Version: 0.1.26-3
+Depends: luci-lib-taskd (>=1.0.19), libc, curl, opkg, luci-lib-ipkg, tar, libuci-lua, mount-utils, luci-lib-taskd
+Section: luci
+Architecture: all
+Installed-Size: 97905
+Filename: luci-app-store_0.1.26-3_all.ipk
+Size: 98987
+SHA256sum: 6a4477bde86e67b63c936cccdd328c17cf2a4d3d27e3ae8d46d14aa921c1fc7f
+Description:  luci-app-store is a ipk store developed by LinkEase team
+
+Package: luci-lib-taskd
+Version: 1.0.20
+Depends: taskd (>=1.0.3-1), libc, luci-lib-xterm, taskd
+Section: luci
+Architecture: all
+Installed-Size: 6135
+Filename: luci-lib-taskd_1.0.20_all.ipk
+Size: 6983
+SHA256sum: 16b7d8cc4795e6cefb953f1ae426eb29f4b080be3e6dac667683a8138da843b9
+Description:  Task library
+
+Package: luci-lib-xterm
+Version: 4.18.0
+Depends: libc
+License: MIT
+Section: luci
+Architecture: all
+Installed-Size: 77218
+Filename: luci-lib-xterm_4.18.0_all.ipk
+Size: 78112
+SHA256sum: 679f9f43f2a8d7f4802127558c96dec1eff045681ea58a5fe9b4b54b18c1195f
+Description:  Xterm.js library
+
+Package: taskd
+Version: 1.0.3-1
+Depends: libc, procd, script-utils, coreutils-stty
+Section: utils
+Architecture: all
+Installed-Size: 1631
+Filename: taskd_1.0.3-1_all.ipk
+Size: 2401
+SHA256sum: 548f7579bef6933f7aedfc7fa5b5de18b81387790a42bb8591b9c092d33e4c7a
+Description:  Simple Task Manager based on procd
+
