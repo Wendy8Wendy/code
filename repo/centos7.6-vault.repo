@@ -13,40 +13,40 @@
 [base]
 name=CentOS-$releasever - Base - vault.centos.org
 failovermethod=priority
-baseurl=http://vault.centos.org/7.6.1810/os/$basearch/
+baseurl=https://vault.centos.org/7.6.1810/os/$basearch/
 gpgcheck=1
-gpgkey=http://vault.centos.org/RPM-GPG-KEY-CentOS-7
+gpgkey=https://vault.centos.org/RPM-GPG-KEY-CentOS-7
  
 #released updates 
 [updates]
 name=CentOS-$releasever - Updates - vault.centos.org
 failovermethod=priority
-baseurl=http://vault.centos.org/7.6.1810/updates/$basearch/
+baseurl=https://vault.centos.org/7.6.1810/updates/$basearch/
 gpgcheck=1
-gpgkey=http://vault.centos.org/RPM-GPG-KEY-CentOS-7
+gpgkey=https://vault.centos.org/RPM-GPG-KEY-CentOS-7
  
 #additional packages that may be useful
 [extras]
 name=CentOS-$releasever - Extras - vault.centos.org
 failovermethod=priority
-baseurl=http://vault.centos.org/7.6.1810/extras/$basearch/
+baseurl=https://vault.centos.org/7.6.1810/extras/$basearch/
 gpgcheck=1
-gpgkey=http://vault.centos.org/RPM-GPG-KEY-CentOS-7
+gpgkey=https://vault.centos.org/RPM-GPG-KEY-CentOS-7
  
 #additional packages that extend functionality of existing packages
 [centosplus]
 name=CentOS-$releasever - Plus - vault.centos.org
 failovermethod=priority
-baseurl=http://vault.centos.org/7.6.1810/centosplus/$basearch/
+baseurl=https://vault.centos.org/7.6.1810/centosplus/$basearch/
 gpgcheck=1
 enabled=0
-gpgkey=http://vault.centos.org/RPM-GPG-KEY-CentOS-7
+gpgkey=https://vault.centos.org/RPM-GPG-KEY-CentOS-7
  
 #contrib - packages by Centos Users
 [contrib]
 name=CentOS-$releasever - Contrib - vault.centos.org
 failovermethod=priority
-baseurl=http://vault.centos.org/7.6.1810/contrib/$basearch/
+baseurl=https://vault.centos.org/7.6.1810/contrib/$basearch/
 gpgcheck=1
 enabled=0
-gpgkey=http://vault.centos.org/RPM-GPG-KEY-CentOS-7
+gpgkey=https://vault.centos.org/RPM-GPG-KEY-CentOS-7
