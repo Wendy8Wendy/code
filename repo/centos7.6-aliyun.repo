@@ -50,3 +50,11 @@ baseurl=https://mirrors.aliyun.com/centos-vault/7.6.1810/contrib/$basearch/
 gpgcheck=1
 enabled=0
 gpgkey=https://mirrors.aliyun.com/centos-vault/RPM-GPG-KEY-CentOS-7
+
+[epel]
+name=EPEL for redhat/centos $releasever - $basearch
+baseurl=https://mirrors.aliyun.com/epel/$releasever/$basearch/
+failovermethod=priority
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.cloud.aliyun.com/epel/RPM-GPG-KEY-EPEL-7
