@@ -51,3 +51,14 @@ baseurl=https://mirrors.tencent.com/centos-vault/7.6.1810/fasttrack/$basearch/
 enabled=0
 gpgcheck=1
 gpgkey=https://mirrors.tencent.com/centos-vault/RPM-GPG-KEY-CentOS-7
+
+# epel.repo
+#
+[epel]
+name=EPEL for redhat/centos $releasever - $basearch
+baseurl=https://mirrors.tencent.com/epel/$releasever/$basearch/
+failovermethod=priority
+enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.cloud.tencent.com/epel/RPM-GPG-KEY-EPEL-7
+
