@@ -60,5 +60,5 @@ baseurl=https://mirrors.tencent.com/epel/$releasever/$basearch/
 failovermethod=priority
 enabled=1
 gpgcheck=1
-gpgkey=https://mirrors.cloud.tencent.com/epel/RPM-GPG-KEY-EPEL-7
+gpgkey=https://mirrors.tencent.com/epel/RPM-GPG-KEY-EPEL-7
 

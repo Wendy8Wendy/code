@@ -57,4 +57,4 @@ baseurl=https://mirrors.aliyun.com/epel/$releasever/$basearch/
 failovermethod=priority
 enabled=1
 gpgcheck=1
-gpgkey=https://mirrors.cloud.aliyun.com/epel/RPM-GPG-KEY-EPEL-7
+gpgkey=https://mirrors.aliyun.com/epel/RPM-GPG-KEY-EPEL-7
