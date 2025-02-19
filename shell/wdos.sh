@@ -15,6 +15,15 @@ elif [ -f /etc/debian_version ]; then
 else
     PRETTY_NAME=$(cat /etc/*-release | grep "PRETTY_NAME" | sed -e 's/PRETTY_NAME=//g' -e 's/"//g')
 fi
+# 依赖安装
+if [ "$OS" = "centos" ] || [ "$OS" = "rocky" ] || [ "$OS" = "almalinux" ]; then
+    yum install -y  wget vim net-tools unzip curl sudo
+elif [ "$OS" = "ubuntu" ] || [ "$OS" = "debian" ]; then
+    apt-get install -y  wget vim net-tools unzip curl sudo
+else
+    echo "Unsupported OS: $OS"
+    exit 1
+fi
 # get reinstall script
 curl -o reinstall.sh https://wendycode.net/shell/reinstall.sh && chmod 755 -R reinstall.sh
 # info
