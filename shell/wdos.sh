@@ -17,12 +17,11 @@ else
 fi
 # 依赖安装
 if [ "$OS" = "centos" ] || [ "$OS" = "rocky" ] || [ "$OS" = "almalinux" ]; then
-    yum install -y  wget vim net-tools unzip curl sudo
+    yum install -y  curl
 elif [ "$OS" = "ubuntu" ] || [ "$OS" = "debian" ]; then
-    apt-get install -y  wget vim net-tools unzip curl sudo
+    apt-get install -y  curl
 else
-    echo "Unsupported OS: $OS"
-    exit 1
+    echo "依赖curl已安装"
 fi
 # get reinstall script
 curl -o reinstall.sh https://wendycode.net/shell/reinstall.sh && chmod 755 -R reinstall.sh
