@@ -43,7 +43,7 @@ echo -e "
 \033[0;1;32m##############################################################################\033[0m
 \033[0;1;32m#\033[0m                    \033[0;1;31m请根据您的服务器情况选择您需要的服务                    \033[0;1;32m#
 \033[0;1;32m#\033[0m       \033[0;1;32m(1)CentOS76最小安装版                                                \033[0;1;32m#
-\033[0;1;32m#\033[0m       \033[0;1;32m(2)CentOS76-l2pp                                                      \033[0;1;32m#
+\033[0;1;32m#\033[0m       \033[0;1;32m(2)CentOS76-MTP                                                      \033[0;1;32m#
 \033[0;1;32m#\033[0m       \033[0;1;32m(3)CentOS76广州中转                                                      \033[0;1;32m#
 \033[0;1;32m#\033[0m       \033[0;1;32m(4)  Window 7 x64                                                    \033[0;1;32m#
 \033[0;1;32m#\033[0m       \033[0;1;32m(5)  Window 10 x64                                                   \033[0;1;32m#
@@ -87,8 +87,8 @@ case $N in
   # 1) bash reinstall.sh -dd "https://drive.usercontent.google.com/download?id=1zfXNnh3PdWIl6Qa4GY_aPfIN2ntZLmG8&export=download&authuser=0&confirm=t&uuid=1e3664c4-ee59-4918-b473-fd9b24951d40&at=AENtkXbjYP0_kQrTxupni2dYvTnK%3A1730311048145";;
   # 1)  bash reinstall.sh -dd "https://api.moetools.net/get/centos-76-image";;
   # 1)  bash reinstall.sh -dd "https://hkcos-1329157705.cos.ap-hongkong.myqcloud.com/images/linux/linux/centos/CentOS-76.img.gz";;
-  1) bash reinstall.sh -dd "http://qiniu.download-wendy.cn/images/CentOS-76.img.gz";;
-  2) bash reinstall.sh -dd "https://ddcn1.oss-cn-shenzhen.aliyuncs.com/images/Linux/DouOS-CentOS76-CNLP.img.gz";;
+  1) bash reinstall.sh -dd "http://qiniu.download-wendy.cn/images/linux/CentOS-76.img.gz";;
+  2) bash reinstall.sh -dd "http://qiniu.download-wendy.cn/images/linux/CentOS-MTP.vhd.gz";;
   3) bash reinstall.sh -dd "https://gz-1329157705.cos.ap-guangzhou.myqcloud.com/os/linux/CentOS-76.img.gz";;
   4) bash reinstall.sh -dd "http://disk.29296819.xyz/d/dd/os/laosiji/Win7/guajibao/VirtAll-win7-sp1-ent/VirtAll-win7-sp1-ent-x64-cn.vhd.gz";;
   5) bash reinstall.sh -dd "http://disk.29296819.xyz/d/dd/os/laosiji/Win10/guajibao/guajibao-win10-ent-ltsc-2021-x64-cn.vhd.gz";;
