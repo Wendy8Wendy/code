@@ -185,7 +185,8 @@ SWAN_VER=3.32
 swan_file="libreswan-$SWAN_VER.tar.gz"
 swan_url1="https://gitee.com/wendyai77/software/raw/master/server/libreswan/libreswan-$SWAN_VER.tar.gz"
 swan_url2="https://wendycode.net/server/libreswan/libreswan-$SWAN_VER.tar.gz"
-if ! { wget -t 3 -T 30 -nv -O "$swan_file" "$swan_url1" || wget -t 3 -T 30 -nv -O "$swan_file" "$swan_url2"; }; then
+swan_url3="https://download.libreswan.org/old-release/libreswan-$SWAN_VER.tar.gz
+if ! { wget -t 3 -T 30 -nv -O "$swan_file" "$swan_url1" || wget -t 3 -T 30 -nv -O "$swan_file" "$swan_url2" || wget -t 3 -T 30 -nv -O "$swan_file" "$swan_url3"; }; then
   exit 1
 fi
 /bin/rm -rf "/opt/src/libreswan-$SWAN_VER"
