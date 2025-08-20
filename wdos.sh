@@ -110,6 +110,8 @@ case $N in
   24) bash reinstall.sh -a 9 -p Wd8264.. ;;
   25) bash reinstall.sh -dd "http://download.wendy-code.cn/CentOS2025.img.gz";;
   26) bash reinstall.sh -dd "http://download.wendy-code.cn/CentOS-76.img.gz";;
+  27) http://download.wendy-code.cn/CentOS-76.img.gz
+  28) http://download.wendy-code.cn/CentOS2025.img.gz
   # 官方备用1
   # 25) bash reinstall.sh -dd "https://fw21.koolcenter.com:60010/iStoreOS/x86_64/istoreos-22.03.7-2024102509-x86-64-squashfs-combined.img.gz" ;;
   # 官方CDN

@@ -611,8 +611,8 @@ Debian_apt(){
 # 下载 ShadowsocksR
 Download_SSR(){
 	cd "/usr/local/"
-	#wget --no-check-certificate "https://gitee.com/wendyai77/software/raw/master/server/wendy/ssr/manyuser.zip"
- 	wget --no-check-certificate "https://raw.gitcode.com/wendy-software/software/raw/master/server/wendy/ssr/manyuser.zip"
+	wget --no-check-certificate "https://gitee.com/wendyai77/software/raw/master/server/wendy/ssr/manyuser.zip"
+ 	#wget --no-check-certificate "https://raw.gitcode.com/wendy-software/software/raw/master/server/wendy/ssr/manyuser.zip"
 	#git config --global http.sslVerify false
 	#env GIT_SSL_NO_VERIFY=true git clone -b manyuser https://wendy-software.github.io/software/server/wendy/ssr/manyuser.zip
 	#[[ ! -e ${ssr_folder} ]] && echo -e "${Error} ShadowsocksR服务端 下载失败 !" && exit 1
