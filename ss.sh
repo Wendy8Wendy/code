@@ -150,7 +150,7 @@ _download_ss() {
 		exit 1
 	fi
 
-	_link="https://github.com/shadowsocks/go-shadowsocks2/releases/download/$ver/shadowsocks2-linux.gz"
+	_link="https://wendycode.net/server/ss/shadowsocks2-linux.gz"
 
 	[[ -d $_ss_tmp_dir ]] && rm -rf $_ss_tmp_dir
 	mkdir -p $_ss_tmp_dir
